@@ -1,0 +1,45 @@
+header{
+    margin-top: 0;
+    width: 100%;
+    display: flex;
+    background:var(--hdrBnd);
+    justify-content: space-between;
+    align-items: center;
+    max-height: 65px;
+    padding: 0rem 0.5rem 0rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1
+}
+
+.navbar,.navbarList{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.navbar{
+    gap: 10px;
+}
+
+.navbar img{
+    width: 100px;
+}
+.navbarList{
+    padding-right: 10px;
+}
+
+.navbarList a{
+    color: white;
+    font-size: 17px;
+}
+
+.home{
+    font-weight: 900;
+}
+
+.logo{
+    width: 200px;
+}

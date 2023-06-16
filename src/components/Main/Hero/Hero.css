@@ -1,0 +1,95 @@
+#hero{
+    display: flex;
+    margin-top: 65px;
+    padding: 70px 0px;
+    max-width: 1600px;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+}
+
+.heroText{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 80%;
+    padding-right: 70px;
+}
+
+.heroText h1{
+    font-size: 95px;
+    color: #ff914d;
+    font-style: italic;
+    font-weight: 900;
+}
+
+.heroText p{
+    font-size: 24px;
+    width: 710px;
+    font-weight: 630;
+    color: #c56f3b;
+}
+
+.heroText a{
+    background-color: #323641;
+    border: 3px solid #ff914d;
+    width: 140px;
+    text-align: center;
+    padding: 5px;
+    font-size: 22px;
+    color: #ff914d;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.heroCard img{
+    width: 500px;
+    border-radius: 1.3rem;
+}
+
+/* mediaqueries zone */
+
+
+.heroCard2 img{
+    display: none;
+    width: 500px;
+    border-radius: 1.3rem;
+}
+
+.heroText2H1{
+    display: none;
+    font-size: 95px;
+    color: #ff914d;
+    font-style: italic;
+    font-weight: 900; 
+}
+
+.heroText2{
+    display: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 80%;
+    padding-right: 70px;
+}
+
+.heroText2 p{
+    display: none;
+    font-size: 24px;
+    width: 710px;
+    font-weight: 630;
+    color: #c56f3b; 
+}
+
+.heroText2 a{
+    display: none;
+    background-color: #323641;
+    border: 3px solid #ff914d;
+    width: 140px;
+    text-align: center;
+    padding: 5px;
+    font-size: 22px;
+    color: #ff914d;
+    border-radius: 0.5rem;
+    cursor: pointer;    
+}
