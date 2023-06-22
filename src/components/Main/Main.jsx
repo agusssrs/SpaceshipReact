@@ -9,16 +9,16 @@ import ContactUs from './ContactUs/ContactUs'
 
 const Main = () => {
   return (
-    <div>
+    <main>
       <Hero/>
-      <div>
+      <>
         <CarsList>
           <Cars/>  
         </CarsList>
-      </div>
+      </>
       <AboutUs/>
       <ContactUs/>
-    </div>
+    </main>
     
   )
 }

@@ -8,8 +8,8 @@ const Navbar = () => {
         <img src= {logosasml} alt="logo" className='logo' />
         <nav className='navbar'>
             <ul className='navbarList'>
-                <li><a href="#home" class="home">Inicio</a></li>
-                <li><a href="#cars">Coches</a></li>
+                <li><a href='../App.js' class="home">Inicio</a></li>
+                <li><a href="#CarList">Coches</a></li>
                 <li><a href="#aboutUs">Nosotros</a></li>
                 <li><a href="#contactUs">Contactanos</a></li>
             </ul>

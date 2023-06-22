@@ -15,6 +15,15 @@
 
 }
 
+html {
+  scroll-behavior: smooth;
+  transition: transform 0.6s;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
 body{
   background: linear-gradient(to bottom,#3a3e4b ,#252c3a);
   display: flex;
