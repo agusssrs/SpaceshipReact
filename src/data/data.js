@@ -1,6 +1,6 @@
-import React from 'react'
 
-const allCars = () => [
+
+const allCars = [
     
         {
             id:0,
