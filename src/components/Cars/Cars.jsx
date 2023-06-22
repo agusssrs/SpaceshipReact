@@ -5,18 +5,17 @@ import CarsList, { carListed } from './CarsList.jsx'
 
 const Cars = () => {
   return (
-    allCars.forEach((coches) =>{
-        
-        div.CarsList.add('coches');
-        <div className='carCard'>
+    allCars.map ((coches) =>{
+      return (  
+        <div key={coches.id}className='carCard'>
             <img src={coches.carImg} alt="" />
             <h2>{coches.brand+' '+coches.model}</h2>
             <p className='carKm'>{coches.km}</p>
             <p className='carPice'>{coches.price}</p>
             <a className='rsvBtn' id={coches.id}>Reservar</a>
         </div>
-
-        carListed.appendChild(CarsList);
+      )
+        
     }) 
   )
 }
