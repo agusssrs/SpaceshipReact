@@ -1,0 +1,25 @@
+#aboutUs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 80px;
+}
+
+#aboutUs h2{
+    font-size: 40px;
+    font-weight: 900;
+    font-style: italic;
+    color: #ff914d;
+}
+
+#aboutUs p{
+    font-size: 24px;
+    width: 1100px;
+    font-weight: 630;
+    color: #ff914d;
+    border: solid 3px #ff914d;
+    padding: 15px;
+    border-radius: 0.5rem;
+}

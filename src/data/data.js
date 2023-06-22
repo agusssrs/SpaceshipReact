@@ -1,5 +1,5 @@
-
-
+import audir8 from '../resources/cars/audir8.jpg';
+import audirs3 from '../resources/cars/audirs3.jpg';
 const allCars = [
     
         {
@@ -9,7 +9,7 @@ const allCars = [
             km:'19000km',
             year:'2017',
             price:'U$D 470.000',
-            carImg:'./assets/cars/audi-r8.jpg'
+            carImg: {audir8},
         },
 
         {
@@ -19,7 +19,7 @@ const allCars = [
             km:'33000km',
             year:'2018',
             price:'U$D 105.000',
-            carImg:'./assets/cars/audi-rs3.jpg',
+            carImg:{audirs3},
         },
 
         {

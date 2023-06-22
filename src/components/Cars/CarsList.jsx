@@ -1,12 +1,13 @@
 import React from 'react'
 import Cars from './Cars'
-export const carListed = document.querySelector('.carList');
+
 const CarsList = () => {
   return (
     <section className='carList'>
-        <carListed>
+      <h2 className='carListTitle'>Todas las naves</h2>
+        <div className='carList'>
             <Cars/> 
-        </carListed>
+       </div>
     </section>
   )
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import allCars from '../../data/data.js'
-import CarsList, { carListed } from './CarsList.jsx'
+
 
 
 const Cars = () => {
