@@ -2,6 +2,7 @@ import React from 'react'
 import './Navbar.css'
 import logosasml from '../../resources/logosasml.png'
 import cartImg from '../../resources/cartImg.png'
+import allCars from '../../data/data'
 
 const Navbar = () => {
   return (
@@ -21,6 +22,15 @@ const Navbar = () => {
             <input type="checkbox" id='cartToggle' />
             <div class="cart" id="cartBox">                
                 <h2>Reservas</h2>
+                <div className='cartItem'>
+                    <img src={allCars.img} alt="" />
+                    <div className='carInfo'>
+                        <h2 className='carModel'>{allCars.model}</h2>
+                        <h3 className='carBrand'>{allCars.brand}</h3>
+                        <p className='price'>{allCars.price*0.25}</p>
+                    </div>
+                    
+                </div>
                 <span class="endCartList"></span>
                 <div class="totalCart">
                     <p>Total:$</p>
