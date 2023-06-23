@@ -4,10 +4,12 @@ const AboutUs = () => {
   return (
     <section id='aboutUs'>
         <h2>Nosotros</h2>
-            <p>Somos una agencia especializada en la compra y venta de vehiculos multimarca.
-                Nuestro objetivo es que nuestros clientes logren concretar la compra o venta de vehiculos, de la mejor manera posible.
-                Para ello, contamos con diversos modelos y marcas.
-                Te asesoraremos a la hora de vender tu vehiculo, o, adquirir un vehiculo que se ajuste a tus necesidades.
+            <p>
+              <span className='block'>Somos una agencia especializada en la venta de vehiculos.</span>
+              <span className='block'> Nuestro objetivo es que nuestros clientes logren concretar la venta de vehiculos, de la mejor manera posible.</span>
+              <span className='block'>Para ello, contamos con diversos modelos y marcas.</span>
+              <span className='block'>Te asesoraremos a la hora de adquirir un vehiculo que se ajuste a tus necesidades.</span>
+              <span className='block'>No dudes en consultarnos si tenes dudas, abajo te dejamos nuestras formas de contacto.</span>
             </p>
     </section>
   )

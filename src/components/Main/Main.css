@@ -9,3 +9,14 @@ main{
     gap: 100px;
     height: 100%;
 }
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerimg{
+    width: 250px;
+    height: 55px;
+}
