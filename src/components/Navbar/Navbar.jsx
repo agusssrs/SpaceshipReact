@@ -3,6 +3,7 @@ import './Navbar.css'
 import logosasml from '../../resources/logosasml.png'
 import cartImg from '../../resources/cartImg.png'
 import allCars from '../../data/data'
+import trash from '../../resources/trash.svg'
 
 const Navbar = () => {
   return (
@@ -17,7 +18,7 @@ const Navbar = () => {
             </ul>
 
             <label for="cartToggle" class="cartLabel">
-                <div class="cart-icon"><img src={cartImg} alt="" /></div>
+                <div class="cartIcon"><img src={cartImg} alt="" /></div>
             </label>
             <input type="checkbox" id='cartToggle' />
             <div class="cart" id="cartBox">                
@@ -29,7 +30,11 @@ const Navbar = () => {
                         <h3 className='carBrand'>{allCars.brand}</h3>
                         <p className='price'>{allCars.price*0.25}</p>
                     </div>
-                    
+                    <div className='quantityHandler'>
+                        <span className='trashBtn'>
+                            <img src={trash} alt="" />
+                        </span>
+                    </div>
                 </div>
                 <span class="endCartList"></span>
                 <div class="totalCart">
