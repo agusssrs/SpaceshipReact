@@ -65,13 +65,14 @@ header{
 
 .cart{
     position: absolute;
-    top: 65px;
+    top: 62px;
     right: 0;
     padding: 50px 5px;
     background: linear-gradient(to bottom,#3a3e4b ,#252c3a);
     border: 3px solid #ff914d;
     border-top: 0px;
-    border-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,6 +133,7 @@ header{
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 0.5rem;
+    cursor: pointer;
 }
 
 
