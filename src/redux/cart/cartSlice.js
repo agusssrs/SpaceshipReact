@@ -45,6 +45,6 @@ export const {
     clearCart,
     removeFromCart,
     toggleHiddenCart
-} = cartSlice.actions
+} = cartSlice.actions;
 
 export default cartSlice.reducer;
