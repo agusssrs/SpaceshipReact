@@ -1,5 +1,5 @@
 import { addItemToCart, removeItemFromCart } from "./cartUtils";
-import { createSlice } from ("@reduxjs/toolkit");
+import { createSlice } from "@reduxjs/toolkit";
 
 const INITIAL_STATE = {
     hidden: true,
