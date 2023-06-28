@@ -1,3 +1,4 @@
+import allCars from '../../data/data';
 import {v4 as uuidv4} from 'uuid';
 uuidv4()
 
@@ -23,7 +24,7 @@ export const addItemToCart = (cartItems, product) =>{
     ]
 }
 
-export const removeItemFromCart = (cartItems) =>{
+export const removeItemFromCart = (cartItems, id) =>{
     const itemToRemove = cartItems.find((item) =>{
         return item.id === id
     })
