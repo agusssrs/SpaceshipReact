@@ -3,13 +3,13 @@ export const addItemToCart = (cartItems, product) =>{
         return item.id === product.id
     });
 
-    // if(itemInCart){
-    //     return cartItems.map((item) => {
-    //         return item.id === itemInCart.id
-    //             ?{...item, quantity: item.quantity + 1}
-    //             : item;
-    //     })
-    // }
+     if(itemInCart){
+         return cartItems.map((item) => {
+             return item.id === itemInCart.id
+                 ?{...item, quantity: item.quantity + 1}
+                 : item;
+         })
+     }
 
     return[
         ...cartItems,
