@@ -62,7 +62,7 @@
     font-weight: 600;
 }
 
-.carCard a{
+.carCard button{
     background-color: #242730;
     border: solid 3px #ff914d;
     border-radius: 0.5rem;
@@ -71,6 +71,7 @@
     text-align: center;
     padding: 5px;
     font-size: 20px;
+    color: #ff914d;
 }
 
 .carCard:hover{

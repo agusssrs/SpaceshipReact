@@ -1,9 +1,12 @@
 import React from 'react'
+import { useDispatch } from 'react-redux'
 import allCars from '../../data/data.js'
+import { addToCart } from '../../redux/cart/cartSlice.js'
 
 
 
-const Cars = () => {
+const Cars = ({id,carImg,brand,model,km,price}) => {
+  const dispatch = useDispatch()
   return (
     allCars.map ((coches) =>{
       return (  
@@ -12,7 +15,7 @@ const Cars = () => {
             <h2>{coches.brand+' '+coches.model}</h2>
             <p className='carKm'>{coches.km}</p>
             <p className='carPice'>{coches.price}</p>
-            <a className='rsvBtn' id={coches.id}>Reservar</a>
+            <button className='rsvBtn' id={coches.id} onClick = {() => dispatch(addToCart ({id,carImg,brand,model,km,price}))}>Reservar</button>
         </div>
       )
         
