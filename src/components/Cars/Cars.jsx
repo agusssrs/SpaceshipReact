@@ -15,7 +15,7 @@ const Cars = ({id,carImg,brand,model,km,price}) => {
             <h2>{coches.brand+' '+coches.model}</h2>
             <p className='carKm'>{coches.km}</p>
             <p className='carPice'>{coches.price}</p>
-            <button className='rsvBtn' id={coches.id} onClick = {() => dispatch(addToCart ({id,carImg,brand,model,km,price}))}>Reservar</button>
+            <button className='rsvBtn' id={coches.id} onClick = {() => dispatch(addToCart ({...coches}))}>Reservar</button>
         </div>
       )
         

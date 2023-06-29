@@ -11,7 +11,7 @@ const Hero = () => {
                     No te preocupes, entraste en el lugar indicado.
                     Acá no compras un auto, compras una nave.
                 </p>
-                <a href="#cars">Ver naves</a>
+                <a href="#CarList">Ver naves</a>
             </div>
             <div class="heroCard">
                 <img src={logosps} alt="" />
