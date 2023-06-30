@@ -4,6 +4,7 @@ import logosasml from '../../resources/logosasml.png'
 import cartImg from '../../resources/cartImg.png'
 import allCars from '../../data/data'
 import trash from '../../resources/trash.svg'
+import { useDispatch } from 'react-redux'
 
 const Navbar = () => {
   return (
@@ -19,6 +20,7 @@ const Navbar = () => {
 
             <label for="cartToggle" class="cartLabel">
                 <div class="cartIcon"><img src={cartImg} alt="" /></div>
+                <span className='ballon'></span>
             </label>
             <input type="checkbox" id='cartToggle' />
             <div class="cart" id="cartBox">                
@@ -28,7 +30,7 @@ const Navbar = () => {
                     <div className='carInfo'>
                         <h2 className='carModel'>{allCars.model}</h2>
                         <h3 className='carBrand'>{allCars.brand}</h3>
-                        <p className='price'>{allCars.price*0.25}</p>
+                        <p className='price'>{allCars.price}</p>
                     </div>
                     <div className='quantityHandler'>
                         <span className='trashBtn'>
@@ -42,7 +44,7 @@ const Navbar = () => {
                     <span>0</span>
                 </div>
                 <button class="btnBuy">Comprar</button>
-                <button class="cartDlt">Vaciar</button>
+                <button class="cartDlt" onClick={useDispatch}>Vaciar</button>
             </div>
         </nav>
     </header>
