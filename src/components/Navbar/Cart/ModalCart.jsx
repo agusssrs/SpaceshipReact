@@ -9,7 +9,8 @@ const ModalCart = () => {
 }  
 
 return (
-        
+   <>
+   </>     
   )
 
 
