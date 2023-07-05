@@ -5,7 +5,7 @@ import { addToCart } from '../../redux/cart/cartSlice.js'
 
 
 
-const Cars = ({id,carImg,brand,model,km,price}) => {
+const Cars = () => {
   const dispatch = useDispatch()
   return (
     allCars.map ((coches) =>{
