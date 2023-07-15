@@ -4,7 +4,7 @@ import allCars from '../../../data/data'
 import {removeFromCart } from '../../../redux/cart/cartSlice'
 import trash from '../../../resources/trash.svg'
 
-const ModalCartCard = ({id,img,model,brand,price}) => {
+const ModalCartCard = ({img,model,brand,price}) => {
   const dispatch = useDispatch
   return (
     <>
