@@ -5,6 +5,7 @@ import cartImg from '../../resources/cartImg.png'
 import allCars from '../../data/data'
 import trash from '../../resources/trash.svg'
 import { useDispatch } from 'react-redux'
+import ModalCart from './Cart/ModalCart'
 
 const Navbar = () => {
   return (
@@ -23,8 +24,9 @@ const Navbar = () => {
                 <span className='ballon'></span>
             </label>
             <input type="checkbox" id='cartToggle' />
-            <div class="cart" id="cartBox">                
-                <h2>Reservas</h2>
+            <div class="cart" id="cartBox">  
+            <ModalCart/>              
+                {/* <h2>Reservas</h2>
                 <div className='cartItem'>
                     <img src={allCars.img} alt="" />
                     <div className='carInfo'>
@@ -44,7 +46,7 @@ const Navbar = () => {
                     <span>0</span>
                 </div>
                 <button class="btnBuy">Comprar</button>
-                <button class="cartDlt" onClick={useDispatch}>Vaciar</button>
+                <button class="cartDlt" onClick={useDispatch}>Vaciar</button> */}
             </div>
         </nav>
     </header>
