@@ -9,7 +9,7 @@ const allCars = [
             km:'19000km',
             year:'2017',
             price:'U$D 470.000',
-            prePurchase: 'U$D 117.500',
+            prePurchase: 117500,
             carImg: 'https://res.cloudinary.com/dhlrtodso/image/upload/v1687474159/audir8_n5glfa.webp',
         },
 
@@ -20,7 +20,7 @@ const allCars = [
             km:'33000km',
             year:'2018',
             price:'U$D 105.000',
-            prePurchase: 'U$D 26.250',
+            prePurchase: 26250,
             carImg:'https://res.cloudinary.com/dhlrtodso/image/upload/v1687474196/audirs3_dulap8.png',
         },
 
@@ -31,7 +31,7 @@ const allCars = [
             km:'32000km',
             year:'2016',
             price:'U$D 85.000',
-            prePurchase: 'U$D 21.250',
+            prePurchase: 21250,
             carImg:'https://res.cloudinary.com/dhlrtodso/image/upload/v1687474194/auditts_o3wowo.webp',
         },
 
@@ -42,7 +42,7 @@ const allCars = [
             km:'0km',
             year:'2022',
             price:'U$D 105.000',
-            prePurchase: 'U$D 26.250',
+            prePurchase: 26250,
             carImg:'https://res.cloudinary.com/dhlrtodso/image/upload/v1687474194/bmw430i_m4k3ub.webp',
         },
 
@@ -53,7 +53,7 @@ const allCars = [
             km:'49000km',
             year:'2018',
             price:'U$D 118.000',
-            prePurchase: 'U$D 29.500',
+            prePurchase: 29500,
             carImg:'https://res.cloudinary.com/dhlrtodso/image/upload/v1687474195/bmwm2_aghh8z.webp',
         },
 
@@ -64,7 +64,7 @@ const allCars = [
             km:'10000km',
             year:'2016',
             price:'U$D 118.000',
-            prePurchase: 'U$D 29.500',
+            prePurchase: 29500,
             carImg:'https://res.cloudinary.com/dhlrtodso/image/upload/v1687474195/bmwm4_ccpeoj.webp',
         },
 
@@ -75,7 +75,7 @@ const allCars = [
             km:'80000km',
             year:'2005',
             price:'U$D 67.000',
-            prePurchase: 'U$D 16.750',
+            prePurchase: 16750,
             carImg:'https://res.cloudinary.com/dhlrtodso/image/upload/v1687474195/bmwm5_xqjkk3.jpg',
         },
 
@@ -86,7 +86,7 @@ const allCars = [
             km:'19000km',
             year:'2017',
             price:'U$D 135.000',
-            prePurchase: 'U$D 33.750',
+            prePurchase: 33750,
             carImg:'https://res.cloudinary.com/dhlrtodso/image/upload/v1687474195/bmwx6_jledce.jpg',
         },
 
@@ -97,7 +97,7 @@ const allCars = [
             km:'6000km',
             year:'2018',
             price:'U$D 970.000',
-            prePurchase: 'U$D 242.500',
+            prePurchase: 242500,
             carImg:'https://res.cloudinary.com/dhlrtodso/image/upload/v1687474195/ferrari488gtb_rmml5f.webp',
         },
 

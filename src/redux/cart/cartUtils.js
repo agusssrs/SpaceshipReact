@@ -26,11 +26,11 @@ export const addItemToCart = (cartItems, product) =>{
 }
 
 export const removeItemFromCart = (cartItems, id) =>{
-    const itemToRemove = cartItems.find((item) =>{
-        return item.id === id
-    })
+    //  const itemToRemove = cartItems.find((item) =>{
+    //      return item.id === id
+    //  })
 
     return cartItems.filter((item) =>{
-        return item.id !== itemToRemove.id
+        return item.id !== id
     })
 }
