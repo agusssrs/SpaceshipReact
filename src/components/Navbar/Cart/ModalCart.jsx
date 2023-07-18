@@ -4,9 +4,9 @@ import ModalCartCard from './ModalCartCard'
 
 const ModalCart = () => {
     const {cartItems} = useSelector(state => state.cart)
-    const totalPrice = cartItems.reduce((acc, item)=>{
+    // const totalPrice = cartItems.reduce((acc, item)=>{
         
-    })
+    // })
 
     return(cartItems.length ? (
                 cartItems.map((item) =>{

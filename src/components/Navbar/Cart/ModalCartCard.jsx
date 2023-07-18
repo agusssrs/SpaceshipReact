@@ -5,17 +5,17 @@ import {removeFromCart } from '../../../redux/cart/cartSlice'
 import trash from '../../../resources/trash.svg'
 
 
-const ModalCartCard = ({img,model,brand,price}) => {
+const ModalCartCard = ({carImg,model,brand,prePurchase,id}) => {
   const dispatch = useDispatch
   return (
     <>
-    {allCars}
+    
     <div className='cartItem'>
-        <img src={img} alt="" />
+        <img src={carImg} alt="" />
         <div className='carInfo'>
           <h2 className='carModel'>{model}</h2>
           <h3 className='carBrand'>{brand}</h3>
-          <p className='price'>{price}</p>
+          <p className='price'>{prePurchase}</p>
         </div>
         <div className='quantityHandler'>
           <span className='trashBtn' onClick={()=> dispatch(removeFromCart(id))}>
