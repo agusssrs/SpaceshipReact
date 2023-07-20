@@ -4,7 +4,7 @@ import location from '../../../resources/logos-redes/location.png'
 import instagram from '../../../resources/logos-redes/instagram.png'
 import whatsapp from '../../../resources/logos-redes/whatsapp.png'
 import schedule from '../../../resources/logos-redes/schedule.png'
-import '../../mediasqueries.css'
+
 
 const ContactUs = () => {
   return (

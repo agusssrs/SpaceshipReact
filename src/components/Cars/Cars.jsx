@@ -2,7 +2,7 @@ import React from 'react'
 import { useDispatch } from 'react-redux'
 import allCars from '../../data/data.js'
 import { addToCart } from '../../redux/cart/cartSlice.js'
-import '../mediasqueries.css'
+
 
 
 

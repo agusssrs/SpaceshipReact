@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { clearCart } from '../../../redux/cart/cartSlice';
 import ModalCartCard from './ModalCartCard';
 import Swal from 'sweetalert2';
-import '../../mediasqueries.css'
+
 
 
 

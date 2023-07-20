@@ -261,6 +261,17 @@ header{
     }
 }
 
+@media (max-width: 370px){
+    .cart{
+        top: 48px;
+        width: 270px;
+    }
+
+    .cartItem{
+        width: 250px;
+    }
+}
+
 @media (max-width:360px){
     .logo{
         width: 155px

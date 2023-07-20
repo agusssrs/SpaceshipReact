@@ -6,7 +6,7 @@ import Cars from '../Cars/Cars'
 import AboutUs from './AboutUs/AboutUs'
 import ContactUs from './ContactUs/ContactUs'
 import logofooter from '../../resources/logofooter.png'
-import '../mediasqueries.css'
+
 
 
 const Main = () => {

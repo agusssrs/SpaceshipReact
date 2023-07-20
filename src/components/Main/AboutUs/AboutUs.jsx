@@ -1,6 +1,6 @@
 import React from 'react'
 import './AboutUs.css'
-import '../../mediasqueries.css'
+
 
 const AboutUs = () => {
   return (
