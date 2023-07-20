@@ -9,7 +9,8 @@ header{
     padding: 0rem 0.5rem 0rem 1rem;
     position: sticky;
     top: 0;
-    z-index: 1
+    z-index: 1;
+    border: 2px solid red;
 }
 
 .navbar,.navbarList{
@@ -212,6 +213,12 @@ header{
 }
 
 @media (max-width:650px){
+    header{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+    }
+    
     .navbar{
         display: flex;
     }
