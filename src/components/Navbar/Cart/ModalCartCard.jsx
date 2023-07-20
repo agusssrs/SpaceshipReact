@@ -1,8 +1,8 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import allCars from '../../../data/data'
 import {removeFromCart } from '../../../redux/cart/cartSlice'
 import trash from '../../../resources/trash.svg'
+import '../../../components/mediasqueries.css'
 
 
 const ModalCartCard = ({carImg,model,brand,prePurchase,id}) => {

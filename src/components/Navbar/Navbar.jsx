@@ -2,10 +2,9 @@ import React from 'react'
 import './Navbar.css'
 import logosasml from '../../resources/logosasml.png'
 import cartImg from '../../resources/cartImg.png'
-import allCars from '../../data/data'
-import trash from '../../resources/trash.svg'
 import { useSelector } from 'react-redux'
 import ModalCart from './Cart/ModalCart'
+import '../mediasqueries.css'
 
 const Navbar = () => {
 const { cartItems } = useSelector(state => state.cart)

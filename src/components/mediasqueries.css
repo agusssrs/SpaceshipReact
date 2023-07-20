@@ -1,0 +1,236 @@
+@media (max-width: 1400px){
+    .heroText h1{
+        font-size: 80px;
+    }
+
+    .heroText p{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1320px){
+    .heroCard img{
+        width:400px;
+    }
+}
+
+@media (max-width: 1280px){
+    .heroCard img{
+        width: 365px;
+    }
+    
+    .carList{
+        grid-template-columns: 300px 300px 300px;
+    }
+
+    .carCard{
+        width: 300px;
+        height: 450px;
+    }
+
+    .carCard img{
+        width:250px;
+    }
+}
+
+@media (max-width: 1200px){
+    .heroText{
+        padding-right: 20px;
+    }
+
+    .carCard h2{
+        font-size: 25px;
+    }
+
+    .carPrice{
+        font-size: 20px;
+    }
+
+    .carKm{
+        font-size: 17px
+    }
+}
+
+@media (max-width: 1130px){
+    .heroText h1{
+        font-size: 70px;
+    }
+
+    .heroText p{
+        width: 600px;
+    }
+
+    #aboutUs p{
+        width: 900px;
+    }
+
+    .redes{
+        grid-template-columns: 200px 200px 200px 200px;
+    }
+
+    .redes div{
+        width: 200px;
+    }
+}
+
+@media (max-width: 1000px){
+    .heroCard img{
+        width:300px;
+    }
+
+    .carList{
+        gap: 10px;
+    }
+}
+
+@media (max-width: 940px){
+    .heroText h1{
+        font-size: 55px;
+    }
+
+    .heroText p{
+        font-size: 20px;
+        width: 450px;
+    }
+
+    .heroText{
+        padding-right: 30px;
+    }
+
+    .carList{
+        grid-template-columns: 260px 260px 260px;
+    }
+
+    .carCard img{
+        width: 200px;
+    }
+
+    .carCard{
+        width: 260px;
+        height: 380px;
+    }
+
+    #aboutUs p{
+        width: 800px;
+    }
+
+    .redes{
+        grid-template-columns: 160px 160px 160px 160px;
+    }
+
+    .redes div{
+        width: 160px;
+    }
+}
+
+@media (max-width:830px){
+    
+    
+ .heroText h1{
+        font-size: 50px;
+    }
+
+    .heroText p{
+        font-size: 20px;
+        width: 380px;
+    }
+
+    .heroText{
+        padding-right: 20px;
+    } 
+    
+    .heroCard img{
+        width:270px;
+    }
+
+    .carListTitle{
+        font-size: 40px;
+    }
+
+    .carList{
+        grid-template-columns: 260px 260px;
+    }
+
+    #aboutUs p{
+        width: 680px;
+    }
+
+    .contactTitle{
+        width: 750px;
+    }
+}
+
+@media (max-width: 749px){
+    #hero{
+        padding-top: 45px;
+        margin-top: 0px;
+        flex-direction: column;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .heroCard{
+        display: none;
+    }
+    
+    .heroText{
+        display: none;
+    }
+
+
+    .heroCard2 img{
+        display: flex;
+        width:400px;
+        align-items: center;
+    }
+
+    .heroText2H1{
+        display: flex;
+        font-size: 42px;
+    }
+
+    .heroText2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .heroText2 p{
+        display: flex;  
+        font-size: 27px;
+        width: 410px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .heroText2 a{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .carList{
+        padding: 10px;
+        
+    }
+    
+    .redes{
+        
+        padding: 10px;
+    }
+
+    .contactTitle{
+        width: 650px;
+    }
+
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 import './Cars.css'
 import Cars from './Cars'
+import '../mediasqueries.css'
 
 const CarsList = () => {
   return (

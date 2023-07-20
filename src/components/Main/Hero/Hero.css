@@ -32,12 +32,13 @@
 
 .heroText a{
     background-color: #323641;
-    border: 3px solid #ff914d;
+    border: 3px solid #c56f3b;
     width: 140px;
     text-align: center;
     padding: 5px;
     font-size: 22px;
-    color: #ff914d;
+    font-weight: 600;
+    color: #c56f3b;
     border-radius: 0.5rem;
     cursor: pointer;
 }
@@ -84,12 +85,13 @@
 .heroText2 a{
     display: none;
     background-color: #323641;
-    border: 3px solid #ff914d;
+    border: 3px solid #c56f3b;
     width: 140px;
     text-align: center;
     padding: 5px;
     font-size: 22px;
-    color: #ff914d;
+    font-weight: 600;
+    color: #c56f3b;
     border-radius: 0.5rem;
     cursor: pointer;    
 }

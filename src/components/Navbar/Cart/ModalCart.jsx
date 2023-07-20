@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { clearCart } from '../../../redux/cart/cartSlice';
 import ModalCartCard from './ModalCartCard';
 import Swal from 'sweetalert2';
+import '../../../components/mediasqueries.css'
 
 
 
@@ -41,7 +42,7 @@ const ModalCart = () => {
         <div class="totalCart">
             <p>Total: U$D {totalPrice}</p>
         </div>
-        <button class="btnBuy" onClick={() => alert()}>Reservar</button>
+        <button class="btnBuy" onClick={() => dispatch (clearCart()) && alert()}>Reservar</button>
         <button class="cartDlt" onClick={() => dispatch(clearCart())}>Vaciar</button>
     </>
 
