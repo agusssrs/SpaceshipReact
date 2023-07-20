@@ -126,7 +126,7 @@
 @media (max-width:830px){
     
     
- .heroText h1{
+    .heroText h1{
         font-size: 50px;
     }
 
@@ -225,7 +225,6 @@
     }
     
     .redes{
-        
         padding: 10px;
     }
 
