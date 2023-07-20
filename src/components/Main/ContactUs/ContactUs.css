@@ -85,3 +85,32 @@
         width: 650px;
     }
 }
+
+@media (max-width: 700px){
+    #contactUs{
+        gap: 30px;
+    }
+
+    #contactUs h2{
+        font-size: 35px;
+    }
+
+    .redes p{
+        font-size: 13px;
+        width: 120px;
+    }
+
+    .redes {
+        gap: 0px;
+    }
+}
+
+@media (max-width: 650px){
+    .redes{
+        grid-template-columns: 140px 140px 140px 140px;
+    }
+
+    .redes img{
+        width: 140px;
+    }
+}

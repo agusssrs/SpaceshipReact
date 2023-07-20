@@ -55,7 +55,21 @@
 }
 
 @media (max-width: 749px){
+    #aboutUs{
+        gap: 30px;
+    }
+
+    #aboutUs h2{
+        font-size: 35px;
+    }
+
     #aboutUs p{
         width: 600px;
+    }
+}
+
+@media (max-width:650px){
+    #aboutUs p{
+        width: 500px;
     }
 }

@@ -20,7 +20,7 @@ const Hero = () => {
 
             
                 <div class="heroText2H1">
-                    <h1>Spaceship Agency</h1>
+                    <h2>Spaceship Agency</h2>
                 </div>
                 <div class="heroCard2">
                     <img src={logosps}  alt="" />

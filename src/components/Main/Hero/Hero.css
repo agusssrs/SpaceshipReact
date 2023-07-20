@@ -241,3 +241,9 @@
         justify-content: center;
     }
 }
+
+@media (max-width:650px){
+    .heroText2H1{
+       font-size: 38px; 
+    }
+}

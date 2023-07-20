@@ -5,6 +5,7 @@ import cartImg from '../../resources/cartImg.png'
 import { useSelector } from 'react-redux'
 import ModalCart from './Cart/ModalCart'
 import '../mediasqueries.css'
+import menuhamburguesa from '../../resources/menuhamburguesa.png'
 
 const Navbar = () => {
 const { cartItems } = useSelector(state => state.cart)
@@ -12,6 +13,10 @@ const { cartItems } = useSelector(state => state.cart)
     <header>
         <img src= {logosasml} alt="logo" className='logo' />
         <nav className='navbar'>
+            <label htmlFor="menuToggle" className='menuLabel'>
+                <div className='menuIcon'><img src={menuhamburguesa} alt=""/></div>
+            </label>
+            <input type="checkbox" id='menuToggle'/>
             <ul className='navbarList'>
                 <li><a href='#hero' class="home">Inicio</a></li>
                 <li><a href="#CarList">Coches</a></li>
