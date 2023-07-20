@@ -78,3 +78,71 @@
 .carCard:hover{
     transform: scale(1.1);
 }
+
+/* mediaqueries zone */
+
+@media (max-width: 1280px){
+    .carList{
+        grid-template-columns: 300px 300px 300px;
+    }
+
+    .carCard{
+        width: 300px;
+        height: 450px;
+    }
+
+    .carCard img{
+        width:250px;
+    }
+}
+
+@media (max-width:1200px){
+    .carCard h2{
+        font-size: 25px;
+    }
+
+    .carPrice{
+        font-size: 20px;
+    }
+
+    .carKm{
+        font-size: 17px
+    }
+}
+
+@media (max-width:1000px){
+    .carList{
+        gap: 10px;
+    }
+}
+
+@media (max-width:940px){
+    .carList{
+        grid-template-columns: 260px 260px 260px;
+    }
+
+    .carCard img{
+        width: 200px;
+    }
+
+    .carCard{
+        width: 260px;
+        height: 380px;
+    }
+}
+
+@media (max-width:830px){
+    .carListTitle{
+        font-size: 40px;
+    }
+
+    .carList{
+        grid-template-columns: 260px 260px;
+    }
+}
+
+@media (max-width:749px){
+    .carList{
+        padding: 10px;    
+    }
+}

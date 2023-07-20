@@ -47,3 +47,41 @@
 .redes img{
     width: 70px;
 }
+
+/* mediaqueries zone */
+
+@media (max-width: 1130px){
+    .redes{
+        grid-template-columns: 200px 200px 200px 200px;
+    }
+
+    .redes div{
+        width: 200px;
+    }
+}
+
+@media (max-width: 940px){
+    .redes{
+        grid-template-columns: 160px 160px 160px 160px;
+    }
+
+    .redes div{
+        width: 160px;
+    }
+}
+
+@media (max-width:830px){
+    .contactTitle{
+        width: 750px;
+    }
+}
+
+@media (max-width: 749px){
+    .redes{
+        padding: 10px;
+    }
+
+    .contactTitle{
+        width: 650px;
+    }
+}

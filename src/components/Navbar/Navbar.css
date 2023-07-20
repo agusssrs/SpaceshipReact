@@ -53,20 +53,21 @@ header{
     display: flex;
 }
 
-.ballon{
+/* .ballon{
     border-radius: 3rem;
     width: 7px;
     height: 7px;
     color: #ff914d;
     background: #ff914d;
     z-index: 3;
-    position: absolute;
-    left: 1897px;
+    position: fixed;
+    display: flex;
+    left: 98.5%;
     top: 36px;
-}
+} */
 
 .cartIcon{
-    width: 45px;
+    width: 50px;
     padding-right:30px;
 }
 

@@ -8,6 +8,7 @@ main{
     width: 100%;
     gap: 100px;
     height: 100%;
+    box-sizing: border-box;
 }
 
 footer{

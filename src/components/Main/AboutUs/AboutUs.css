@@ -27,3 +27,35 @@
 .block{
     display: block;
 }
+
+/* mediaqueries zone */
+
+@media (max-width:1280px){
+    #aboutUs p{
+        width: 1000px;
+    }
+}
+
+@media (max-width: 1130px){
+    #aboutUs p{
+        width: 900px;
+    }
+}
+
+@media (max-width: 940px){
+    #aboutUs p{
+        width: 800px;
+    }
+}
+
+@media (max-width:830px){
+    #aboutUs p{
+        width: 680px;
+    }
+}
+
+@media (max-width: 749px){
+    #aboutUs p{
+        width: 600px;
+    }
+}
