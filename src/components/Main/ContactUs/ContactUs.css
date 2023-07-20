@@ -106,11 +106,34 @@
 }
 
 @media (max-width: 650px){
-    .redes{
-        grid-template-columns: 140px 140px 140px 140px;
+    #contactUs h2{
+        font-size: 30px;
+        width: 340px;
     }
 
-    .redes img{
-        width: 140px;
+    .redes{
+        grid-template-columns: 140px 140px;
+        gap: 20px;
+    }
+
+}
+
+@media (max-width:360px){
+    #contactUs h2{
+        font-size: 27px;
+        width: 300px;
+    }
+
+    .redes{
+        grid-template-columns: 130px 130px;
+        gap: 5px;
+    }
+
+    #instagram, #whatsapp, #location, #schedules{
+        width: 120px;
+    }
+
+    #instagram img, #whatsapp img, #location img, #schedules img{
+        width: 50px;
     }
 }

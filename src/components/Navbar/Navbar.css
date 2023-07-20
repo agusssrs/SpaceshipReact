@@ -10,7 +10,7 @@ header{
     position: sticky;
     top: 0;
     z-index: 1;
-    border: 2px solid red;
+    
 }
 
 .navbar,.navbarList{
@@ -258,5 +258,11 @@ header{
 
     #menuToggle:checked + .navbarList{
         display: flex;
+    }
+}
+
+@media (max-width:360px){
+    .logo{
+        width: 155px
     }
 }

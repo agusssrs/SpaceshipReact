@@ -145,4 +145,38 @@
     .carList{
         padding: 10px;    
     }
+
+    .carListTitle{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 650px){
+    .carList{
+        padding: 10px;
+        grid-template-columns: 210px 210px;    
+    }
+    .carCard img{
+        width: 150px;
+    }
+
+    .carCard{
+        width: 210px;
+        height: 330px;
+    }
+}
+
+@media (max-width: 450px){
+    .carList{
+        grid-template-columns: 260px;
+    }
+
+    .carCard img{
+        width: 200px;
+    }
+
+    .carCard{
+        width: 260px;
+        height: 380px;
+    }
 }

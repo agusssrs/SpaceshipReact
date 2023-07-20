@@ -247,3 +247,41 @@
        font-size: 38px; 
     }
 }
+
+@media (max-width: 450px){
+    .heroCard2 img{
+        display: flex;
+        width:300px;
+        align-items: center;
+    }
+
+    .heroText2 p{
+        display: flex;  
+        font-size: 22px;
+        width: 350px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;  
+    }
+}
+
+@media (max-width:360px){
+    .heroText2H1{
+        font-size: 30px; 
+     }
+
+    .heroCard2 img{
+        display: flex;
+        width:270px;
+        align-items: center;
+    }
+
+    .heroText2 p{
+        display: flex;  
+        font-size: 21px;
+        width: 300px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;  
+    }
+}
