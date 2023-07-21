@@ -23,13 +23,6 @@ const ModalCartCard = ({carImg,model,brand,prePurchase,id}) => {
           </span>
         </div>
     </div>
-    {/* <span class="endCartList"></span>
-    <div class="totalCart">
-      <p>Total:$</p>
-      <span>{totalPrice}</span>
-    </div>
-    <button class="btnBuy">Reservar</button>
-    <button class="cartDlt" onClick={useDispatch}>Vaciar</button> */}
     </>
   )
 }

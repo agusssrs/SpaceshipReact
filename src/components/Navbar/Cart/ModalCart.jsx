@@ -22,7 +22,7 @@ const ModalCart = () => {
             toast: true,
             position: 'top-end',
             showConfirmButton: false,
-            timer: 1500,
+            timer: 2000,
             timerProgressBar: true,
             background: '#3a3e4b',
             color:'#ff914d'

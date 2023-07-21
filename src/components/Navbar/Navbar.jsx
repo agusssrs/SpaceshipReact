@@ -4,8 +4,8 @@ import logosasml from '../../resources/logosasml.png'
 import cartImg from '../../resources/cartImg.png'
 import { useSelector } from 'react-redux'
 import ModalCart from './Cart/ModalCart'
-
 import menuhamburguesa from '../../resources/menuhamburguesa.png'
+import { BrowserRouter, Link } from 'react-router-dom'
 
 const Navbar = () => {
 const { cartItems } = useSelector(state => state.cart)
@@ -18,10 +18,11 @@ const { cartItems } = useSelector(state => state.cart)
             </label>
             <input type="checkbox" id='menuToggle'/>
             <ul className='navbarList'>
-                <li><a href='#hero' class="home">Inicio</a></li>
+                <li> <Link to='/' class="home">Inicio</Link></li>
                 <li><a href="#CarList">Coches</a></li>
                 <li><a href="#aboutUs">Nosotros</a></li>
                 <li><a href="#contactUs">Contactanos</a></li>
+                <li><Link to='/Login'>Iniciar sesion</Link></li>
             </ul>
 
             <label for="cartToggle" class="cartLabel">
