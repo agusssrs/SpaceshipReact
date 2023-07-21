@@ -18,7 +18,7 @@ header{
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    gap: 15px;
+    gap: 10px;
 }
 
 .navbar{
