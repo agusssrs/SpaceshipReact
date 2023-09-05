@@ -18,7 +18,7 @@ header{
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    gap: 10px;
+    gap: 15px;
 }
 
 .navbar{
@@ -265,19 +265,29 @@ header{
     }
 }
 
+@media (max-width: 450px){
+    .navbarList{
+        width: 100vw;
+        left: 0%;
+    }
+}
+
 @media (max-width: 370px){
     .cart{
-        top: 48px;
-        width: 270px;
+        width: 100vw;
     }
 
     .cartItem{
-        width: 250px;
+        width: 95%;
     }
 }
 
 @media (max-width:360px){
     .logo{
         width: 155px
+    }
+
+    .cart{
+        top: 46px;
     }
 }

@@ -6,6 +6,74 @@
     width: 100vw;
 }
 
+#CarList{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filter{
+    display: flex;
+    gap: 12px;
+    padding-top: 5px;
+}
+
+.brandFilter{  
+    width: 130px;
+    gap: 10px;
+    background: #1d1f27;
+    border: 3px solid #ff914d;
+    border-radius: 0.5rem;
+    font-size: 17px;
+    font-weight: 600;
+    color: #ff914d;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.6s;
+}
+
+.modelFilter{
+    width: 130px;
+    gap: 10px;
+    background: #1d1f27;
+    border: 3px solid #ff914d;
+    border-radius: 0.5rem;
+    font-size: 17px;
+    font-weight: 600;
+    color: #ff914d;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.6s;
+}
+
+.priceFilter{
+    width: 130px;
+    gap: 10px;
+    background: #1d1f27;
+    border: 3px solid #ff914d;
+    border-radius: 0.5rem;
+    font-size: 17px;
+    font-weight: 600;
+    color: #ff914d;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.6s;
+}
+
+.brandFilter:hover{
+    transform: scale(1.1);
+}
+
+.modelFilter:hover{
+    transform: scale(1.1);
+}
+
+.priceFilter:hover{
+    transform: scale(1.1);
+}
+
 .carListTitle{
     text-align: center;
     font-size: 40px;
@@ -78,6 +146,8 @@
 .carCard:hover{
     transform: scale(1.1);
 }
+
+
 
 /* mediaqueries zone */
 

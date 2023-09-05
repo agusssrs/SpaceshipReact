@@ -39,7 +39,7 @@ const Login = () => {
   return (
     <section id="iniciosesion">
     <div id='logoInicioSesion'><h2>Spaceship Agency</h2></div>
-    <div class="formulario">
+    <div class="formularioLogin">
         <h2>Inicia sesion</h2>
         <form method="post">
             <div class="e-mail">
