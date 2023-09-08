@@ -26,10 +26,7 @@ const { cartItems } = useSelector(state => state.cart)
             </ul>
 
             <label for="cartToggle" class="cartLabel">
-                <div class="cartIcon"><img src={cartImg} alt="" />{
-                    cartItems.length > 0 &&
-                    <span className='ballon'></span>
-                }</div>
+                <div class="cartIcon"><img src={cartImg} alt="" /></div>
                 
             </label>
             <input type="checkbox" id='cartToggle' />

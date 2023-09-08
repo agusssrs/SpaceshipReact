@@ -35,6 +35,10 @@ const CarsList = () => {
   return (
     <section id='CarList'>
       <h2 className='carListTitle'>Todas las naves</h2>
+      <label htmlFor="filterToggle" className='filterLabel'>
+          <p>Ordenar por:</p>
+      </label>
+      <input type="checkbox" id='filterToggle'/>
       <div className='filter'>
         <button className='brandFilter' id='aTo' onClick={()=> handleSort ('brand', 'asc')}>A-Z Marca</button>
         <button className='brandFilter' id='zToa' onClick={()=> handleSort ('brand', 'desc')}>Z-A Marca</button>
