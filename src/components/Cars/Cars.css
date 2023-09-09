@@ -269,10 +269,19 @@
     }
 
     .filterLabel{
+        width: 130px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
         display: flex;
         cursor: pointer;
         align-items: center;
         text-align: center;
+        border: 3px solid #ff914d;
+        background-color: #1d1f27;
+        padding: 5px;
+        border-radius: 0.5rem;
+        color: #ff914d;
     }
 
     #filterToggle:checked + .filter{
