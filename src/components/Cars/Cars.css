@@ -266,7 +266,6 @@
         border-bottom-right-radius: 0.5rem;
         gap: 15px;
         align-items: center;
-        
     }
 
     .filterLabel{
@@ -279,7 +278,6 @@
     #filterToggle:checked + .filter{
         display: grid;
         grid-template-columns: 120px 120px;
-        transition: all 2s ease-in-out;
     }
 
     .carList{
