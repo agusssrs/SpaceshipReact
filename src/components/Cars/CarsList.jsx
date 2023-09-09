@@ -3,20 +3,6 @@ import './Cars.css'
 import allCars from '../../data/data.js';
 import Cars from './Cars'
 
-
-
-// export const Filter = () =>{
-//   <div className='filter'>
-//     <button className='brandFilter' id='aTo'>A-Z Marca</button>
-//     <button className='brandFilter' id='zToa'>Z-A Marca</button>
-//     <button className='modelFilter' id='aTozModels'>A-Z Modelo</button>
-//     <button className='modelFilter' id='zToaModels'>Z-A Modelo</button>
-//     <button className='priceFilter' id='+To-'>+ a - precio</button>
-//     <button className='priceFilter' id='-To+'>- a + precio</button>
-//   </div>
-// }
-
-
 const CarsList = () => {
   const [sortedList, setSortedList] = useState([...allCars]);
 
