@@ -93,11 +93,6 @@ header{
     display: none;
 }
 
-.cart h2{
-    color: white;
-    font-weight: 800;
-}
-
 .cartItem{
     color: white;
     display: flex;
@@ -257,6 +252,10 @@ header{
         width: 100vw;
         left: 0%;
     }
+
+    .cartItemImg img{
+        width: 90px;
+    }
 }
 
 @media (max-width: 370px){
@@ -270,6 +269,10 @@ header{
 }
 
 @media (max-width:360px){
+    .navbarList{
+        top: 48px;
+    }
+
     .logo{
         width: 155px
     }

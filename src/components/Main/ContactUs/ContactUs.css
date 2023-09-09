@@ -112,10 +112,14 @@
     }
 
     .redes{
-        grid-template-columns: 140px 140px;
+        grid-template-columns: 160px 160px;
         gap: 20px;
     }
 
+    .redes p{
+        font-size: 18px;
+        width: 160px;
+    }
 }
 
 @media (max-width:360px){
@@ -126,7 +130,14 @@
 
     .redes{
         grid-template-columns: 130px 130px;
-        gap: 5px;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .redes p{
+        font-size: 16px;
+        width: 140px;
     }
 
     #instagram, #whatsapp, #location, #schedules{

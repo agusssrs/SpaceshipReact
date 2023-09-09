@@ -14,7 +14,7 @@ const ModalCartCard = ({carImg,model,brand,prePurchase,id}) => {
     <>
     
     <div className='cartItem'>
-        <img src={carImg} alt="" />
+        <div  className='cartItemImg'><img src={carImg} alt="" /></div>
         <div className='carInfo'>
           <h2 className='carModel'>{model}</h2>
           <h3 className='carBrand'>{brand}</h3>
