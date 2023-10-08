@@ -3,11 +3,14 @@ import './Register.css'
 import { ErrorMessage, Field, Formik } from 'formik';
 import { registerValues } from '../../Formik/initialValues';
 import { registerSchema } from '../../Formik/validationSchema';
+import { useNavigate } from 'react-router-dom';
 
 const Register = ({email, password}) => {
-
+    
+    const navigate = useNavigate();
   return (
     <section id="registro">
+    
     <div id='logoInicioSesion'><h2>Spaceship Agency</h2></div>
         
     <div class="formulario">
