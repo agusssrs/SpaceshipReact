@@ -5,7 +5,7 @@ import cartImg from '../../resources/cartImg.png'
 import { useSelector } from 'react-redux'
 import ModalCart from './Cart/ModalCart'
 import menuhamburguesa from '../../resources/menuhamburguesa.png'
-import { BrowserRouter, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
 const { cartItems } = useSelector(state => state.cart)

@@ -1,58 +1,62 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './Register.css'
-import logosabig from '../../resources/logosabig.png';
-import { useNavigate } from 'react-router-dom';
+import { ErrorMessage, Field, Formik } from 'formik';
+import { registerValues } from '../../Formik/initialValues';
+import { registerSchema } from '../../Formik/validationSchema';
 
-const Register = () => {
-
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [errorEmail, setErrorEmail] = useState('');
-    const [errorPassword, setErrorPassword] = useState('')
-    const navigate = useNavigate();
-
-    const validatePassword = (value) =>{
-        setPassword(value);
-        if (value === ''){
-            setErrorPassword('Completa este campo')
-        }
-    }
-
-    const validateEmail = (value) => {
-        setEmail(value);
-        if (value === ''){
-            setErrorEmail('Completa este campo')
-        }
-
-        
-    }
-
-    const validate = () =>{
-        if(email !== '' && password !== ''){
-            navigate("/");
-        }
-
-    }
+const Register = ({email, password}) => {
 
   return (
     <section id="registro">
     <div id='logoInicioSesion'><h2>Spaceship Agency</h2></div>
+        
     <div class="formulario">
+        <Formik 
+            initialValues={registerValues}
+            validationSchema={registerSchema}
+            onSubmit={(values) => console.log(values)}
+        >
+
         <h2>Registrate</h2>
         <form method="post">
             <div class="e-mail">
                 <label for="email">Tu e-mail</label>
-                <input type="email" id="email" value={email} onChange={(e)=> validateEmail(e.value)} required/>
-                {errorEmail !== '' && <span>{errorEmail}</span>}
+                <Field name = {email}>
+                    {
+                        ({field, form: {errors, touched}}) => (
+                            <>
+                                <input name="email" type="email" id="email" {...field} isError={errors[field.email] && touched[field.email]} required />
+                                <ErrorMessage name = {field.email}>
+                                    {message => <p className='errorMessage'>{message}</p>}
+                                </ErrorMessage>
+                            </>
+                        )
+                    }
+                    
+                </Field>
+                
             </div>
             <div class="contraseña">
                 <label for="password">Contraseña</label>
-                <input type="password" id="password" value={password} onChange={(e)=> validatePassword(e.value)} required/>
-                {errorPassword !== '' && <span>{errorPassword}</span>}
+                <Field name = {password}>
+                    {
+                        ({field, form: {errors, touched}}) => (
+                            <>
+                                <input name= "password" type="password" id="password" {...field} isError = {errors[field.password] && touched[field.password]} required/>                
+                                <ErrorMessage>
+                                    {message => <p className='errorMessage'>{message}</p>}
+                                </ErrorMessage>
+                            </>
+                        )
+                    }
+                </Field>
+                
             </div>
-            <button class="signUp" onClick={validate}>Crear cuenta</button>
+            <button class="signUp">Crear cuenta</button>
         </form>
+        </Formik>
     </div>
+        
 </section> 
   )
 }

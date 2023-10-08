@@ -1,6 +1,5 @@
 import { addItemToCart, removeItemFromCart } from "./cartUtils";
 import { createSlice } from "@reduxjs/toolkit";
-import allCars from "../../data/data";
 
 const INITIAL_STATE = {
     hidden: true,
