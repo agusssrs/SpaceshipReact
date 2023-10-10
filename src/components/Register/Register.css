@@ -52,6 +52,7 @@
     border: 3px solid #c56f3b;
     border-radius: 0.5rem;
     color: white;
+    cursor: pointer;
 }
 
 @media (max-width:450px){

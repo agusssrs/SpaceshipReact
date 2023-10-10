@@ -30,19 +30,20 @@ const Cars = (props) => {
   }
   const dispatch = useDispatch()
   return (
-    props.list.map((coches) => {
-      return (
-        <div key={coches.id} className='carCard'>
+    
+      props.list.map((coches) => {
+        return(
+          <div key={coches.id} className='carCard'>
           <img src={coches.carImg} alt="" />
           <h2>{coches.brand + ' ' + coches.model}</h2>
           <p className='carKm'>{coches.km}</p>
           <p className='carPice'>{`U$D ${formatNumberWithDots(coches.price)}`}</p>
           <button className='rsvBtn' id={coches.id} onClick={() => handleReservation(coches)}>Reservar</button>
         </div>
-
-      )
-
+        )
     })
+
+    
   )
 }
 
