@@ -137,15 +137,15 @@ class Register extends Component {
 
             <div className="formulario">
               <h2>Registrate</h2>
-                <form onSubmit={this.handleSubmit}>
+                <form method='post' onSubmit={this.handleSubmit}>
                     <div className="email">
                         <label for="email">Tu email:</label>                                   
-                        <input type="text" id="email" value={this.state.email} onChange={this.handleEmailChange} required/> 
+                        <input name='email' type="text" id="email" value={this.state.email} onChange={this.handleEmailChange} required/> 
                     </div>
                                        
                     <div className="contraseña">
                         <label for="password">Contraseña:</label>                            
-                        <input type="password" id="password" value={this.state.password} onChange={this.handlePasswordChange} required/>
+                        <input name='password' type="password" id="password" value={this.state.password} onChange={this.handlePasswordChange} required/>
                                            
                     </div>
                     
