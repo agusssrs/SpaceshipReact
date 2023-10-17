@@ -104,13 +104,15 @@ class Register extends Component {
       password: this.state.password,
       validation: regEmail
     };
-    
-    if (!data.validation) {
+
+    const validation = () =>{
+      if (!regEmail) {
         return(
             <p>ingrese email</p>
         ) 
     }
-
+    } 
+    
     axios.post(`${BASE_URL}auth/register`, data)
       .then(response => {
         console.log(response);
@@ -140,7 +142,7 @@ class Register extends Component {
                 <form method='post' onSubmit={this.handleSubmit}>
                     <div className="email">
                         <label for="email">Tu email:</label>                                   
-                        <input name='email' type="text" id="email" value={this.state.email} onChange={this.handleEmailChange} required/> 
+                        <input name='email' type="text" id="email" value={this.state.email} onChange={this.handleEmailChange} onClick={data.validation} required/> 
                     </div>
                                        
                     <div className="contraseña">
