@@ -34,7 +34,7 @@
     padding: 20px 0px 20px 0px;
 }
 
-.formulario form{
+.formulario Form{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,6 +53,12 @@
     border-radius: 0.5rem;
     color: white;
     cursor: pointer;
+}
+
+.errors {
+    color: red;
+    font-size: 15px;
+    padding-top: 10px;
 }
 
 @media (max-width:450px){

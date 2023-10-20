@@ -3,6 +3,7 @@ import Main from '../Main/Main.jsx'
 import Login from '../Login.jsx'
 import Register from '../Register/Register.jsx'
 import Navbar from '../Navbar/Navbar.jsx'
+import verified from '../Register/verified.jsx'
 
 function Routes() {
     return (
@@ -12,6 +13,7 @@ function Routes() {
                 <Route path='/' element={<Main />} />
                 <Route path='/login' element={<Login />} />
                 <Route path='/register' element={<Register />} />
+                <Route path='/verified' element={<verified/>}/>
             </Routes>
         </>
     )
