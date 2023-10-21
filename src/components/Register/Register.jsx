@@ -215,7 +215,7 @@ const Register = () => {
       handleBotonActivo(false);
       const response = await axios.post(`${BASE_URL}auth/register`, values);
       console.log(response);      
-      navigate(`/verified?email=${response.data.usuario.email}`);
+      navigate(`/verified/${response.data.usuario.email}`);
 
     } catch (error) {
       handleBotonActivo(true);

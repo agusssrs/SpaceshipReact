@@ -12,6 +12,7 @@ const cartSlice = createSlice({
         addToCart: (state, action) => {
             return {
                 ...state,
+                
                 cartItems: addItemToCart(state.cartItems, action.payload),
             }
 
@@ -20,6 +21,7 @@ const cartSlice = createSlice({
         removeFromCart: (state, action) => {
             return {
                 ...state,
+                
                 cartItems: removeItemFromCart(state.cartItems, action.payload)
             }
         },
@@ -27,6 +29,7 @@ const cartSlice = createSlice({
         clearCart: (state) => {
             return {
                 ...state,
+                
                 cartItems: []
             }
         },
@@ -34,6 +37,7 @@ const cartSlice = createSlice({
         toggleHiddenCart: (state) => {
             return {
                 ...state,
+
                 hidden: !state.hidden
             }
         }
