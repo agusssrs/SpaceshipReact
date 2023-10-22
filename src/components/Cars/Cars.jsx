@@ -28,7 +28,7 @@ const Cars = (props) => {
     dispatch(addToCart({ ...coches }))
     alert()
   }
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
   return (
     
       props.list.map((coches) => {

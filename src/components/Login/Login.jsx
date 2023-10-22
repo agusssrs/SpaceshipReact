@@ -78,6 +78,8 @@ import { Link, useNavigate } from 'react-router-dom';
 
 
 const Login = () => {
+    const navigate = useNavigate();
+
     const initialValues = {
         email:'',
         password:''
@@ -90,13 +92,13 @@ const Login = () => {
 
     const onSubmit = async (values) => {
         try {
-          const response = await axios.post(`${BASE_URL}auth/login`, values);
-          console.log(response);
-  
+            const response = await axios.post(`${BASE_URL}auth/login`, values);
+            console.log(response);
+            navigate('/')
         } catch (error) {
-          if(error.response.status === 404) {
-            alert('El email no se encuntra en la base de datos.')
-          }
+            if(error.response.status === 404) {
+                alert('El email no se encuntra en la base de datos.')
+            }
         }
   
         // const navigate = useNavigate();
