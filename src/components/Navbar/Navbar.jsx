@@ -2,13 +2,20 @@ import React from 'react'
 import './Navbar.css'
 import logosasml from '../../resources/logosasml.png'
 import cartImg from '../../resources/cartImg.png'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import ModalCart from './Cart/ModalCart'
 import menuhamburguesa from '../../resources/menuhamburguesa.png'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+import { toggleMenu } from '../../redux/user/userSlice'
 
-const Navbar = () => {
-const { cartItems } = useSelector(state => state.cart)
+const Navbar = () => {   
+    const navigate = useNavigate();
+    
+    const currentUser = useSelector(state => state.user.currentUser);
+
+    const dispatch = useDispatch();
+
+    const { cartItems } = useSelector(state => state.cart)
   return (
     <header>
         <img src= {logosasml} alt="logo" className='logo' />
@@ -22,7 +29,13 @@ const { cartItems } = useSelector(state => state.cart)
                 <li><a href="#CarList">Coches</a></li>
                 <li><a href="#aboutUs">Nosotros</a></li>
                 <li><a href="#contactUs">Contactanos</a></li>
-                <li><Link to='/Login'>Iniciar sesion</Link></li>
+                {/* <li><Link to='/Login'>Iniciar sesion</Link></li> */}
+                <li><div onClick={() => 
+                    currentUser ? dispatch(toggleMenu()): navigate('/Login')}
+                    >{
+                        currentUser ? `${currentUser.email}` : 'Iniciar sesion'
+                    }</div>
+                </li>
             </ul>
 
             <label for="cartToggle" class="cartLabel">

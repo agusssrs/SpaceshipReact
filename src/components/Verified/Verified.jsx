@@ -18,16 +18,17 @@ const Verified = () => {
     //     return <Navigate to="/" />;
     // }
 
-    const onSubmit = async (values) => {
+    const verifyUser = async (email, code) => {
         try {
-          const response = await axios.patch(`${BASE_URL}auth/verify`, values);
-          console.log(response);      
+          const response = await axios.patch(`${BASE_URL}auth/verify`, {email, code});     
           navigate('/');
-            
+          return response.data
+
         } catch (error) {
-          if(error.response.status === 400) {
-            alert('El email ya existe en la base de datos. Por favor, intentelo nuevamente.')
-          }
+          // if(error.response.status === 400) {
+          //   alert('El email ya existe en la base de datos. Por favor, intentelo nuevamente.')
+          // }
+          console.log(error);
         }
     
           // const navigate = useNavigate();
@@ -45,7 +46,10 @@ const Verified = () => {
         <div id='logoVerified'><h2>Spaceship Agency</h2></div>
         <div className='formVerified'>
             <Formik
-                onSubmit={onSubmit}
+                onSubmit={async (values) => {
+                  const user = await verifyUser(values.email, values.code);
+                  console.log(user);
+                }}
             >
                 <Form>
                     <div className="email">
