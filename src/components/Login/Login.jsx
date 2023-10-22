@@ -74,6 +74,7 @@ import axios from 'axios';
 import * as Yup from 'yup';
 import { BASE_URL } from '../../utils/constants';
 import { Link, useNavigate } from 'react-router-dom';
+import { loginUser } from '../../axios/axiosUser';
 
 
 
@@ -90,20 +91,22 @@ const Login = () => {
         password: Yup.string().min(8, 'la contraseña debe tener minimo 8 caracteres.').required('Required'),
     });   
 
-    const onSubmit = async (values) => {
-        try {
-            const response = await axios.post(`${BASE_URL}auth/login`, values);
-            console.log(response);
-            navigate('/')
-        } catch (error) {
-            if(error.response.status === 404) {
-                alert('El email no se encuntra en la base de datos.')
-            }
-        }
+    // const onSubmit = async (email, password, token) => {
+    //     try {
+    //         const response = await axios.post(`${BASE_URL}auth/login`, email, password, token);
+    //         console.log(response);
+    //         navigate('/')
+    //     } catch (error) {
+    //         if(error.response.status === 404) {
+    //             alert('El email no se encuntra en la base de datos.')
+    //         }
+    //     }
   
-        // const navigate = useNavigate();
-        // navigate.push('/');
-      }    
+    //     // const navigate = useNavigate();
+    //     // navigate.push('/');
+    //   }    
+
+    
 
   return (
     <section id="iniciosesion">
@@ -113,7 +116,10 @@ const Login = () => {
             <Formik
                 initialValues={initialValues}
                 validationSchema={validationSchema}
-                onSubmit={onSubmit} 
+                onSubmit={async (values) => {
+                    const user = await loginUser(values.email, values.password);
+                    console.log(user);
+                }} 
             >
 
             {({errors, touched}) => (

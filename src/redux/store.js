@@ -6,6 +6,7 @@ import cartReducer from './cart/cartSlice'
 import userReducer from './user/userSlice'
 import reserveReducer from './cart/reserveSlice'
 
+
 const reducers = combineReducers({
     cart: cartReducer,
     user: userReducer,

@@ -210,12 +210,12 @@ const Register = () => {
     setBotonActivo(actual);
   };
 
-  const onSubmit = async (values) => {
+  const onSubmit = async (email, password, token) => {
     try {
       handleBotonActivo(false);
-      const response = await axios.post(`${BASE_URL}auth/register`, values);
+      const response = await axios.post(`${BASE_URL}auth/register`, email, password, token);
       console.log(response);      
-      navigate(`/verified/${response.data.usuario.email}`);
+      navigate(`/verified/${response.data.usuario.email}`);  
 
     } catch (error) {
       handleBotonActivo(true);
