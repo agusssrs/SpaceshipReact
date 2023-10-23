@@ -1,5 +1,6 @@
 import React from 'react'
 import { formatNumberWithDots } from '../Cars/Cars';
+import { useNavigate } from 'react-router-dom';
 
 export const formatDate = (date) => {
     const fecha = date?.split('T')[0];
@@ -9,18 +10,20 @@ export const formatDate = (date) => {
     return `${fechaLegible} ${horaLegible}`;
 };
 
+
+
 const Cardorders = ({createdAt, total, _id}) => {
+
+  const navigate = useNavigate()
+
   return (
-    <>
-       <div>
-        <div>
-            <h2>ID de orden: {_id.slice(0,7)}</h2>
-            <p>Fecha {formatDate(createdAt)}hs</p>
-            <p>{formatNumberWithDots(total)}</p>
-        </div>
-    </div> 
-    </>
-    
+    <div onClick={navigate(`/${_id}`)}>
+      <div>
+          <h2>ID de orden: {_id.slice(0,5)}</h2>
+          <p>Fecha {formatDate(createdAt)}hs</p>
+          <p>{formatNumberWithDots(total)}</p>
+      </div>
+    </div>    
   )
 }
 

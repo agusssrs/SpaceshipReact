@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { fetchOrdersFail, fetchOrdersStart, fetchOrdersSuccess } from '../redux/orders/ordersSlice'
+import { createOrderFail, fetchOrdersFail, fetchOrdersStart, fetchOrdersSuccess } from '../redux/orders/ordersSlice'
 import { BASE_URL } from '../utils/constants'
 
 
@@ -41,5 +41,24 @@ export const getOrders = async (dispatch, currentUser) => {
     } catch (error) {
         console.log(error);
         dispatch(fetchOrdersFail("ocurrio un error."));
+    }
+};
+
+
+export const createOrder = async (order, dispatch, currentUser) => {
+    try {
+        const response = await axios.post(`${BASE_URL}orders`, order,{
+            headers:{
+                "x-token": currentUser.token,
+            },
+        });
+
+        if (response) {
+            getOrders(dispatch, currentUser)
+        }
+
+    } catch (error) {
+        console.log(error);
+        dispatch(createOrderFail);
     }
 }
