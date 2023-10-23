@@ -25,6 +25,7 @@ const Navbar = () => {
             </label>
             <input type="checkbox" id='menuToggle'/>
             <ul className='navbarList'>
+                <li><a href='/Orders'>orders</a></li>
                 <li> <Link to='/' class="home">Inicio</Link></li>
                 <li><a href="#CarList">Coches</a></li>
                 <li><a href="#aboutUs">Nosotros</a></li>

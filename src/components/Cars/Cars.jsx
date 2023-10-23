@@ -3,10 +3,12 @@ import { useDispatch } from 'react-redux'
 import { addToCart } from '../../redux/cart/cartSlice.js'
 import Swal from 'sweetalert2';
 
-const Cars = (props) => {
-  const formatNumberWithDots = (number) => {
+export const formatNumberWithDots = (number) => {
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
-  }
+}
+
+const Cars = (props) => {
+  
 
   const alert = () => {
     const Toast = Swal.mixin({

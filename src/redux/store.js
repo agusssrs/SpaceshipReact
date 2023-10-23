@@ -5,12 +5,13 @@ import persistStore from 'redux-persist/lib/persistStore'
 import cartReducer from './cart/cartSlice'
 import userReducer from './user/userSlice'
 import reserveReducer from './cart/reserveSlice'
-
+import ordersReducer from '../redux/orders/ordersSlice'
 
 const reducers = combineReducers({
     cart: cartReducer,
     user: userReducer,
-    reserve: reserveReducer
+    reserve: reserveReducer,
+    orders: ordersReducer,
 })
 const persistConfig = {
     key: 'root',
