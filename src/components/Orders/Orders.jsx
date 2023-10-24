@@ -3,7 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom'
 import { getOrders } from '../../axios/axiosOrders';
 import { clearError, fetchOrdersFail } from '../../redux/orders/ordersSlice';
-import CardOrders from './CardsOrders';
+
+import CardsOrders from './CardsOrders';
 
 const Orders = () => {
     const navigate = useNavigate();
@@ -30,7 +31,11 @@ const Orders = () => {
   return (
     <>
         <div>Orders</div>
-        <div> <CardOrders/> </div>
+        <div> 
+            <CardsOrders/>
+
+        
+        </div>
     </>
     
   )

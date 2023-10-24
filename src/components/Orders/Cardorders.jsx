@@ -17,11 +17,13 @@ const Cardorders = ({createdAt, total, _id}) => {
   const navigate = useNavigate()
 
   return (
-    <div onClick={navigate(`/${_id}`)}>
+    // <div onClick={navigate(`/${_id}`)}>
+    <div > 
       <div>
           <h2>ID de orden: {_id.slice(0,5)}</h2>
-          <p>Fecha {formatDate(createdAt)}hs</p>
-          <p>{formatNumberWithDots(total)}</p>
+          <p>Fecha {formatDate(createdAt)}</p>
+          {/* <p>{formatNumberWithDots(total)}</p> */}
+           
       </div>
     </div>    
   )

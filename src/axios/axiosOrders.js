@@ -40,7 +40,7 @@ export const getOrders = async (dispatch, currentUser) => {
         }
     } catch (error) {
         console.log(error);
-        dispatch(fetchOrdersFail("ocurrio un error."));
+        dispatch(fetchOrdersFail("Ha ocurrido un error. El usuario no es valido."));
     }
 };
 
