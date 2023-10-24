@@ -67,7 +67,7 @@ const ModalCart = () => {
         <div class="totalCart">
             <p>Total: {`U$D ${formatNumberWithDots (totalPrice)}`}</p>
         </div>
-        <button class="btnBuy" onClick={() => dispatch (addToReserve(cartItems)) && dispatch(clearCart()) && navigate('/payment')}>Reservar</button>
+        <button class="btnBuy" onClick={() => navigate('/checkout')}>Reservar</button>
         <button class="cartDlt" onClick={() => dispatch(clearCart()) && alertDlt()}>Vaciar</button>
     </>
 

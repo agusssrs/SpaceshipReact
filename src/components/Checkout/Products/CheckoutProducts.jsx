@@ -17,7 +17,7 @@ const CheckoutProducts = ({cartItems, price}) => {
             }
         </div>
         <span className='totalCheckOut'>
-            <p>${formatNumberWithDots(price)}</p>
+            <p>{`U$D ${formatNumberWithDots(price)}`}</p>
         </span>
     </div>
   )

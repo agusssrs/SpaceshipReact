@@ -1,10 +1,11 @@
 import React from 'react'
-import { Formik } from 'formik';
+import { Formik, Form } from 'formik';
 import { useDispatch, useSelector } from 'react-redux'
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import * as Yup from 'yup';
 import { createOrder } from '../../../axios/axiosOrders';
 import { clearCart } from '../../../redux/cart/cartSlice'
+
 
 const checkOutInitialValues = {
     email: '',
@@ -23,7 +24,7 @@ const checkOutSchema = Yup.object({
 const CheckoutForm = ({cartItems, price, prePurchase}) => {
     const dispatch = useDispatch();
 
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     const {currentUser} = useSelector(state => state.user);
 
@@ -56,7 +57,9 @@ const CheckoutForm = ({cartItems, price, prePurchase}) => {
         >
             {
                 ({isSubmitting}) => (
-                    <form className='checkoutForm'>
+
+
+                    <Form className='checkoutForm'>
                         Tu email <input htmlFor='email' type='email' id='email' name='email' placeholder='spaceshipagency@gmail.com'/>
                         Tu telefono <input htmlFor='cellphone' type="number" id='cellphone' name='cellphone' placeholder='1136364747'/>
                         Tu direccion <input htmlFor='address' type="text" id='address' name='address' placeholder='Avenida Libertador 2799'/>               
@@ -64,7 +67,7 @@ const CheckoutForm = ({cartItems, price, prePurchase}) => {
                         <div>
                             <button type="submit" disabled={!cartItems.length}>{isSubmitting ? 'cargando...' :  'Pagar'}</button>
                         </div>
-                    </form>
+                    </Form>
                 )               
             }
             
