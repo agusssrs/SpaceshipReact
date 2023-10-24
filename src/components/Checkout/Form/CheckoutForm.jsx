@@ -1,5 +1,5 @@
 import React from 'react'
-import { Formik, Form } from 'formik';
+import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { useDispatch, useSelector } from 'react-redux'
 // import { useNavigate } from 'react-router-dom';
 import * as Yup from 'yup';
@@ -60,10 +60,21 @@ const CheckoutForm = ({cartItems, price, prePurchase}) => {
 
 
                     <Form className='checkoutForm'>
-                        Tu email <input htmlFor='email' type='email' id='email' name='email' placeholder='spaceshipagency@gmail.com'/>
+                        Tu email<Field type='email' id='email' name='email' placeholder='spaceshipagency@gmail.com'/>
+                        <ErrorMessage name='email'></ErrorMessage>
+
+                        Tu telefono<Field type="number" id='cellphone' name='cellphone' placeholder='1136364747'/>
+                        <ErrorMessage name='cellphone'></ErrorMessage>
+
+                        Tu direccion<Field type="text" id='address' name='address' placeholder='Avenida Libertador 2799'/>
+                        <ErrorMessage name='address'></ErrorMessage>
+
+                        Tu numero de tarjeta<Field type='number' id='cardNumber' name='cardNumber' placeholder='4646575768687979'/>
+                        <ErrorMessage name='cardNumber'></ErrorMessage>
+                        {/* Tu email <input htmlFor='email' type='email' id='email' name='email' placeholder='spaceshipagency@gmail.com'/>
                         Tu telefono <input htmlFor='cellphone' type="number" id='cellphone' name='cellphone' placeholder='1136364747'/>
                         Tu direccion <input htmlFor='address' type="text" id='address' name='address' placeholder='Avenida Libertador 2799'/>               
-                        Tu numero de tarjeta <input htmlFor='cardNumber' type='number' id='cardNumber' name='cardNumber' placeholder='4646575768687979'/>
+                        Tu numero de tarjeta <input htmlFor='cardNumber' type='number' id='cardNumber' name='cardNumber' placeholder='4646575768687979'/> */}
                         <div>
                             <button type="submit" disabled={!cartItems.length}>{isSubmitting ? 'cargando...' :  'Pagar'}</button>
                         </div>
