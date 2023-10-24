@@ -1,0 +1,53 @@
+.CardCheckoutProducts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 250px;
+
+    padding: 8px;
+    border: 3px solid #ff914d;
+    border-radius: 0.5rem;
+    flex-direction: column;
+}
+
+.cardImg{
+    display: flex;
+    align-items: center;
+}
+
+.cardImg img{
+    width: 200px;
+}
+
+.cardInfo{
+    display: flex;
+    width: 200px;
+    gap: 10px;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.delete{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.trashBtnCheckout{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    border: 3px solid #ff914d;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.trashBtnCheckout img{
+    width: 15px;
+}
+

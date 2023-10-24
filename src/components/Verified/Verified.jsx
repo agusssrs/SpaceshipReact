@@ -54,13 +54,15 @@ const Verified = () => {
                 <Form>
                     <div className="email">
                         <label htmlFor='email'>Tu email</label>
-                        <input type="email" name="email" id="email" value={email} readOnly/>
+                        {/* <input type="email" name="email" id="email" value={email} readOnly/> */}
+                        <Field type="email" name="email" id="email" value={email} readOnly/>
                     </div>
                     
-                    <div className="code">
-                        <label htmlFor='code'>Codigo de verificacion</label>
+                    <div className="verified">
+                        <label htmlFor='verified'>Codigo de verificacion</label>
                         {/* <Field name="code" id="code"/> */}
-                        <input type="text" name='code' id='code' />
+                        {/* <input type="text" name='code' id='code' /> */}
+                        <Field type="text" name='verified' id='verified'/>
                     </div>
 
                     <button type='submit' className='verifiedBtn'>Verificate</button>
