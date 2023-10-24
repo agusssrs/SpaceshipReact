@@ -7,6 +7,7 @@ import Register from './components/Register/Register'
 import Verified from './components/Verified/Verified'
 import Payment from './components/Payment/Payment';
 import Orders from './components/Orders/Orders';
+import Checkout from './components/Checkout/Checkout';
 
 
 
@@ -18,12 +19,11 @@ function App() {
         <Route path='/' element={<Main />} />
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
-        {/* <Route path='/verified' element={<Verified/>}/> */}
         <Route path='/verified/:email' element={<Verified />} />
         <Route path='/payment' element={<Payment/>}/>
         <Route path='/orders' element={<Orders/>}/>
+        <Route path='/checkout' element={<Checkout/>}/>
       </Routes>
-
     </div>
   );
 }

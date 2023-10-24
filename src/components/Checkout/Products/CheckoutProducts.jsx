@@ -1,4 +1,5 @@
 import React from 'react'
+import CardCheckoutProducts, { formatNumberWithDots } from './CardCheckoutProducts'
 
 const CheckoutProducts = ({cartItems, price}) => {
   return (
@@ -8,13 +9,16 @@ const CheckoutProducts = ({cartItems, price}) => {
             {
                 cartItems.length ? (
                     cartItems.map((item) => {
-                        
+                        return <CardCheckoutProducts {...item} key={item.id}/>
                     })
                 ) : (
                     <p>No tenes ninguna reserva</p>
                 )
             }
         </div>
+        <span className='totalCheckOut'>
+            <p>${formatNumberWithDots(price)}</p>
+        </span>
     </div>
   )
 }
