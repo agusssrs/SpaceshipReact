@@ -7,7 +7,7 @@ const Checkout = () => {
     const {cartItems} = useSelector(state => state.cart);
 
     const price = cartItems.reduce((acc, item) => {
-        return (acc += item.price * item.quantity)
+        return (acc += item.prePurchase * item.quantity)
     }, 0)
 
   return (

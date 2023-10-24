@@ -38,8 +38,7 @@ const CheckoutForm = ({cartItems, price, prePurchase}) => {
                 const orderData = {
                     items: cartItems,
                     price,
-                    prePurchase,
-                    total: prePurchase,
+                   
                     finishOrder:{
                         ...values
                     }
