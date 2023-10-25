@@ -1,6 +1,8 @@
 import React from 'react'
 import { formatNumberWithDots } from '../Cars/Cars';
 import { useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+
 
 export const formatDate = (date) => {
     const fecha = date?.split('T')[0];
@@ -12,7 +14,8 @@ export const formatDate = (date) => {
 
 
 
-const Cardorders = ({createdAt, total, _id}) => {
+const Cardorders = ({createdAt, total, _id, items}) => {
+
 
   const navigate = useNavigate()
 
@@ -23,7 +26,14 @@ const Cardorders = ({createdAt, total, _id}) => {
           <h2>ID de orden: {_id.slice(0,5)}</h2>
           <p>Fecha {formatDate(createdAt)}</p>
           {/* <p>{formatNumberWithDots(total)}</p> */}
-           
+          {
+            items.slice(0,3).map(
+              (item) => {
+                return <img src={item.carImg} alt="" />
+            }
+          )
+          } 
+                              
       </div>
     </div>    
   )
