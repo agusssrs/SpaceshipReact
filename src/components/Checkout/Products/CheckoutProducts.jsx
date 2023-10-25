@@ -1,10 +1,11 @@
 import React from 'react'
 import CardCheckoutProducts, { formatNumberWithDots } from './CardCheckoutProducts'
+import './CardCheckoutProducts.css'
 
 const CheckoutProducts = ({cartItems, price}) => {
   return (
     <div className='CheckoutProducts'>
-        <h2>Tus reservas</h2>
+        <h2 className='ordersTitle'>Tus reservas</h2>
         <div className='checkoutProductsWrp'>
             {
                 cartItems.length ? (
@@ -16,8 +17,8 @@ const CheckoutProducts = ({cartItems, price}) => {
                 )
             }
         </div>
-        <span className='totalCheckOut'>
-            <p>{`U$D ${formatNumberWithDots(price)}`}</p>
+        <span className='totalCheckOut animate-bg'>
+            <p>{`Total: U$D ${formatNumberWithDots(price)}`}</p>
         </span>
     </div>
   )
