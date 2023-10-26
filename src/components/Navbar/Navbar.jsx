@@ -7,6 +7,7 @@ import ModalCart from './Cart/ModalCart'
 import menuhamburguesa from '../../resources/menuhamburguesa.png'
 import { Link, useNavigate } from 'react-router-dom'
 import { toggleMenu } from '../../redux/user/userSlice'
+import ModalUser from './ModalUser/ModalUser'
 
 const Navbar = () => {   
     const navigate = useNavigate();
@@ -24,13 +25,13 @@ const Navbar = () => {
                 <div className='menuIcon'><img src={menuhamburguesa} alt=""/></div>
             </label>
             <input type="checkbox" id='menuToggle'/>
+            <ModalUser/>
             <ul className='navbarList'>
                 <li><a href='/Orders'>orders</a></li>
                 <li> <Link to='/' class="home">Inicio</Link></li>
                 <li><a href="#CarList">Coches</a></li>
                 <li><a href="#aboutUs">Nosotros</a></li>
                 <li><a href="#contactUs">Contactanos</a></li>
-                {/* <li><Link to='/Login'>Iniciar sesion</Link></li> */}
                 <li><div onClick={() => 
                     currentUser ? dispatch(toggleMenu()): navigate('/Login')}
                     >{
@@ -40,8 +41,7 @@ const Navbar = () => {
             </ul>
 
             <label for="cartToggle" class="cartLabel">
-                <div class="cartIcon"><img src={cartImg} alt="" /></div>
-                
+                <div class="cartIcon"><img src={cartImg} alt="" /></div>                
             </label>
             <input type="checkbox" id='cartToggle' />
             <div class="cart" id="cartBox">  
