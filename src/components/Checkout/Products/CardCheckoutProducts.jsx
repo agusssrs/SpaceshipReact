@@ -2,7 +2,7 @@ import React from 'react'
 import { useDispatch } from 'react-redux';
 import { removeFromCart } from '../../../redux/cart/cartSlice';
 import trash from '../../../resources/trash.svg'
-import './CardCheckoutProducts.css'
+import '../CheckoutStyles.css'
 
 export const formatNumberWithDots = (number) => {
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');

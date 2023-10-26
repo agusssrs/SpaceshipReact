@@ -2,7 +2,7 @@ import React from 'react'
 import CheckoutForm from './Form/CheckoutForm'
 import CheckoutProducts from './Products/CheckoutProducts'
 import { useSelector } from 'react-redux'
-import './Products/CardCheckoutProducts.css'
+import './CheckoutStyles.css'
 
 const Checkout = () => {
     const {cartItems} = useSelector(state => state.cart);
@@ -13,7 +13,6 @@ const Checkout = () => {
 
   return (
     <div className='Checkout'>
-        Checkout
         <CheckoutForm
             cartItems={cartItems}
             price={price}

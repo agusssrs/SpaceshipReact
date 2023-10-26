@@ -1,0 +1,212 @@
+.CardCheckoutProducts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 250px;
+    background-color: #16222A;
+    padding: 8px;
+    border: 3px solid #c56f3b;
+    border-radius: 0.5rem;
+    flex-direction: column;
+    box-shadow: 0px 0px 8px #ff914d;
+}
+
+.cardImg{
+    display: flex;
+    align-items: center;
+}
+
+.cardImg img{
+    width: 200px;
+}
+
+.cardInfo{
+    display: flex;
+    width: 200px;
+    gap: 10px;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.delete{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.trashBtnCheckout{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    border: 3px solid #c56f3b;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;     
+}
+
+.trashBtnCheckout img{
+    width: 15px;
+}
+
+.CheckoutProducts{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.ordersTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    padding: 60px;
+    padding-bottom: 0px;
+    color: #ff914d;
+    text-shadow: 0px -1px 20px #ff914d; 
+}
+
+.checkoutProductsWrp{
+    display: flex;
+    overflow-x:auto;
+    max-width: 1100px;
+    padding:10px;
+    padding-bottom: 16px;
+    gap: 20px;
+}
+
+.checkoutProductsWrp::-webkit-scrollbar{
+    height: 6px;
+    background-color: #16222A; 
+    border-radius: 0.5rem;  
+}
+
+.checkoutProductsWrp::-webkit-scrollbar-thumb{
+    background-color: #c56f3b;
+    border-radius: 0.5rem;
+}
+
+.totalCheckOut{
+    display: flex;
+    width: 270px;
+    border: 4px solid #c56f3b;
+    border-radius: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding-top: 4px;    
+    background: #16222A;
+    box-shadow: 0px 0px 10px #ff914d; 
+}
+
+.totalCheckOut p{    
+    font-size: 25px;
+    font-weight: 600;
+    color: white;      
+}   
+
+.Checkout{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Checkout From */
+
+.ChekoutForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.ChekoutForm h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    padding: 30px;
+    padding-bottom: 0px;
+    color: #ff914d;
+    text-shadow: 0px -1px 20px #ff914d; 
+}
+
+.checkoutForm {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.checkoutFormGrid{
+    display: grid;    
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 70px 70px;
+}
+
+.checkoutFormEmail{
+    color: white;
+    width: 300px;
+}
+
+.checkoutFormCellphone{
+    color: white;
+    width: 300px;
+    background: transparent;
+    border: transparent;
+    border-bottom: 3px solid #c56f3b;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    font-size: 20px;
+}
+
+.checkoutFormAddress{
+    color: white;
+    width: 300px;
+    background: transparent;
+    border: transparent;
+    border-bottom: 3px solid #c56f3b;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    font-size: 20px;
+}
+
+.checkoutFormCardNumber{
+    color: white;
+    width: 300px;
+    background: transparent;
+    border: transparent;
+    border-bottom: 3px solid #c56f3b;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    font-size: 20px;
+}
+
+.checkoutFormBtn{
+    display: flex;
+    width: 160px;
+    height: 30px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #16222A;
+    border: 3px solid #c56f3b;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 20px;
+    box-shadow: 0px 0px 10px #ff914d; 
+}
