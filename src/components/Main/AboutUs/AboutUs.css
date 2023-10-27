@@ -12,6 +12,7 @@
     font-weight: 900;
     font-style: italic;
     color: #ff914d;
+    text-shadow: 0px 0px 17px #c56f3b; 
 }
 
 #aboutUs p{
@@ -19,9 +20,10 @@
     width: 1260px;
     font-weight: 630;
     color: #ff914d;
-    border: solid 3px #ff914d;
+    border: solid 3px #c56f3b;
     padding: 15px;
     border-radius: 0.5rem;
+    box-shadow: 0px 0px 20px #ff914d;
 }
 
 .block{

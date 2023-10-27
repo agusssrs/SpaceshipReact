@@ -13,6 +13,7 @@
     font-size: 40px;
     font-style: italic;
     max-width: 800px;
+    text-shadow: 0px 0px 17px #c56f3b; 
 }
 
 #contactUs img{
@@ -42,6 +43,7 @@
     font-size: 18px;
     flex-direction: unset;
     text-align: center;
+    text-shadow: 0px 0px 40px #c56f3b; 
 }
 
 .redes img{

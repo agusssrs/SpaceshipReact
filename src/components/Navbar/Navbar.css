@@ -37,6 +37,11 @@ header{
     font-size: 17px;
 }
 
+.navbarList div{
+    color: white;
+    font-size: 17px;
+}  
+
 .home{
     font-weight: 900;
 }
@@ -75,7 +80,7 @@ header{
     right: 0;
     padding: 50px 5px;
     background: linear-gradient(to bottom,#3a3e4b ,#252c3a);
-    border: 3px solid #ff914d;
+    border: 3px solid #c56f3b;
     border-top: 0px;
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
@@ -83,10 +88,12 @@ header{
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    z-index: 2;
+    z-index: 3;
     overflow-y: scroll;
     display: none;
     max-height: 500px;
+    box-shadow: 0px 0px 10px #ff914d;
+
 }
 
 .cart::-webkit-scrollbar{
@@ -104,6 +111,7 @@ header{
     padding: 5px;
     width: 320px;
     color: #ff914d;
+    box-shadow: 0px 0px 10px #ff914d;
 }
 
 .cartItem h2{
@@ -147,7 +155,8 @@ header{
 .endCartList{
     width: 350px;
     height: 3px;
-    background: #ff914d;
+    background: #c56f3b;
+    box-shadow: 0px 0px 10px #ff914d;
 }
 
 .totalCart{
@@ -171,6 +180,7 @@ header{
     border-radius: 0.5rem;
     cursor: pointer;
     color: #ff914d;
+    box-shadow: 0px 0px 10px #ff914d;
 }
 
 .cartDlt{
@@ -186,6 +196,7 @@ header{
     border-radius: 0.5rem;
     cursor: pointer;
     color: #ff914d;
+    box-shadow: 0px 0px 10px #ff914d;
 }
 
 .trashBtn{
@@ -196,6 +207,28 @@ header{
 
 .trashBtn img{
     width: 15px;
+}
+
+@media (max-width:749px){
+    .navbarList a{
+        color: white;
+        font-size: 15px;
+    }
+
+    .navbarList div{
+        color: white;
+        font-size: 15px;
+    }
+}
+
+@media (max-width:696px){
+    .navbarList a{
+        font-size: 13px;
+    }
+
+    .navbarList div{
+        font-size: 13px;
+    }   
 }
 
 @media (max-width:650px){

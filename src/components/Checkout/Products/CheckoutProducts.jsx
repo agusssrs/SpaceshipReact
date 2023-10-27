@@ -7,7 +7,7 @@ const CheckoutProducts = ({cartItems, price}) => {
     
   return (
     <div className='CheckoutProducts'>
-        <h2 className='ordersTitle'>Tus reservas</h2>
+        <h2 className='checkoutTitle'>Tus reservas</h2>
         <div className='checkoutProductsWrp'>
             {
                 cartItems.length ? (

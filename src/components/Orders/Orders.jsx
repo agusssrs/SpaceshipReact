@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom'
 import { getOrders } from '../../axios/axiosOrders';
 import { clearError, fetchOrdersFail } from '../../redux/orders/ordersSlice';
+import './OrdersStyle.css'
 
 import CardsOrders from './CardsOrders';
 
@@ -30,11 +31,10 @@ const Orders = () => {
 
   return (
     <>
-        <div>Orders</div>
-        <div> 
-            <CardsOrders/>
-
-        
+        {/* <div className='Orders'>Orders</div> */}
+        <div className='Orders'> 
+            <h2 className="ordersTitle">Tus Reservas</h2>
+            <CardsOrders/>        
         </div>
     </>
     

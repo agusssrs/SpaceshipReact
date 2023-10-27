@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Navbar.css'
 import logosasml from '../../resources/logosasml.png'
 import cartImg from '../../resources/cartImg.png'
@@ -27,15 +27,14 @@ const Navbar = () => {
             <input type="checkbox" id='menuToggle'/>
             <ModalUser/>
             <ul className='navbarList'>
-                <li><a href='/Orders'>orders</a></li>
                 <li> <Link to='/' class="home">Inicio</Link></li>
-                <li><a href="#CarList">Coches</a></li>
-                <li><a href="#aboutUs">Nosotros</a></li>
-                <li><a href="#contactUs">Contactanos</a></li>
+                <li><a href="/#CarList">Coches</a></li>
+                <li><a href="/#aboutUs">Nosotros</a></li>
+                <li><a href="/#contactUs">Contactanos</a></li>
                 <li><div onClick={() => 
                     currentUser ? dispatch(toggleMenu()): navigate('/Login')}
                     >{
-                        currentUser ? `${currentUser.email}` : 'Iniciar sesion'
+                        currentUser ? `${currentUser.email.slice(0, 10)}...` : 'Iniciar sesion'
                     }</div>
                 </li>
             </ul>
