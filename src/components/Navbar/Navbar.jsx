@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import './Navbar.css'
 import logosasml from '../../resources/logosasml.png'
 import cartImg from '../../resources/cartImg.png'
@@ -26,18 +26,17 @@ const Navbar = () => {
             </label>
             <input type="checkbox" id='menuToggle'/>
             <ModalUser/>
-            <ul className='navbarList'>
-                <li> <Link to='/' class="home">Inicio</Link></li>
-                <li><a href="/#CarList">Coches</a></li>
-                <li><a href="/#aboutUs">Nosotros</a></li>
-                <li><a href="/#contactUs">Contactanos</a></li>
-                <li><div onClick={() => 
-                    currentUser ? dispatch(toggleMenu()): navigate('/Login')}
-                    >{
-                        currentUser ? `${currentUser.email.slice(0, 10)}...` : 'Iniciar sesion'
-                    }</div>
-                </li>
-            </ul>
+            <div className='navbarList'>
+                <Link to='/' class="home">Inicio</Link>
+                <a href="/#CarList">Coches</a>
+                <a href="/#aboutUs">Nosotros</a>
+                <a href="/#contactUs">Contactanos</a>                
+            </div>                
+            <div onClick={() =>currentUser ? dispatch(toggleMenu()): navigate('/Login')}>                   
+                {
+                    currentUser ? `${currentUser.email.slice(0, 10)}...` : 'Iniciar sesion'
+                }
+            </div>
 
             <label for="cartToggle" class="cartLabel">
                 <div class="cartIcon"><img src={cartImg} alt="" /></div>                

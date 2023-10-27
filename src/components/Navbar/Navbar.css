@@ -236,6 +236,18 @@ header{
         display: flex;
         flex-wrap: wrap;
         width: 100vw;
+    }    
+    
+    .menuLabel{
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        justify-content: flex-end;
+        top: 0;
+    }    
+    
+    #menuToggle:checked + .navbarList{
+        display: flex;
     }
     
     .navbar{
@@ -262,22 +274,16 @@ header{
         display: none;
     }
 
-    .menuLabel{
-        display: flex;
-        cursor: pointer;
-        align-items: center;
-        justify-content: flex-end;
-        top: 0;
-    }
+
+
+
 
     .menuIcon img{
         margin: 0;
         width: 36px;
     }
 
-    #menuToggle:checked + .navbarList{
-        display: flex;
-    }
+
 }
 
 @media (max-width: 450px){
