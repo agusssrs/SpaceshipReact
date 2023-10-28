@@ -13,7 +13,7 @@ header{
     
 }
 
-.navbar,.navbarList{
+.navbar,.navbarList, .navbarLinks{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -209,6 +209,10 @@ header{
     width: 15px;
 }
 
+.userMenuMq2{
+    display: none;
+}
+
 @media (max-width:749px){
     .navbarList a{
         color: white;
@@ -257,6 +261,47 @@ header{
     .navbarList{
         position: absolute;
         top: 62px;
+        left: 5%;
+        right: 0%;
+        width: 90%;
+        flex-direction: column;
+        background: linear-gradient(to bottom,#3a3e4b ,#252c3a);
+        border: 3px solid #ff914d;
+        border-top: 0px;
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+        text-align: center;
+        border-top: 0px;
+        gap: 15px;
+        z-index: 8;
+        padding: 25px 30px ;
+        display: none;
+    }
+
+    .userMenuMq1{
+        display: none;
+    }
+
+    .userMenuMq2{
+        display: flex;
+    }
+
+    .navbarLinks{
+        flex-direction: column;
+    }
+
+    /* .menuLabel{
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        justify-content: flex-end;
+        top: 0;       
+    }
+
+
+    .navbarList{
+        position: absolute;
+        top: 62px;
         left: 65%;
         right: 5%;
         width: 200px;
@@ -274,8 +319,9 @@ header{
         display: none;
     }
 
-
-
+    #menuToggle:checked + .navbarList{
+        display: flex;
+    } */
 
 
     .menuIcon img{
@@ -287,13 +333,43 @@ header{
 }
 
 @media (max-width: 450px){
+    header{
+        padding-right: 0px;
+    }
+
+
     .navbarList{
         width: 100vw;
         left: 0%;
     }
 
+    .logo{
+        width: 150px;
+    }
+
+    .menuIcon img{
+        width: 30px;
+    }
+
+    .cartIcon{
+        padding: 0;
+        width: 35px;
+    }
+
+    .cartIcon img{
+        width: 25px;
+    }
+
     .cartItemImg img{
         width: 90px;
+    }
+
+    .cart{
+        top: 46px;
+    }
+
+    .navbarList{
+        top: 46px;
     }
 }
 
@@ -309,14 +385,21 @@ header{
 
 @media (max-width:360px){
     .navbarList{
-        top: 48px;
+        top: 40px;
     }
 
     .logo{
-        width: 155px
+        width: 130px
     }
 
     .cart{
-        top: 46px;
+        top: 40px;
+    }
+
+    .menuIcon img{
+        width: 25px;
+    }
+    .cartIcon img{
+        width: 20px;
     }
 }

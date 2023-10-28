@@ -242,13 +242,13 @@ const Register = () => {
             <Form>
               <div className="email">
                 <label htmlFor="email">Tu email:</label>
-                <Field type="email" name="email" id="email"/>
+                <Field type="email" name="email" id="email" className="emailFieldRegister"/>
                 {errors.email && touched.email ? (<div className='errors'>{errors.email}</div>) : null}
               </div>
 
               <div className="password">
                 <label htmlFor="password">Tu password: </label>
-                <Field type="password" name="password" id="password"/>
+                <Field type="password" name="password" id="password" className="passwordFieldRegister"/>
                 {errors.password && touched.password ? (<div className='errors'>{errors.password}</div>) : null}
               </div>
 

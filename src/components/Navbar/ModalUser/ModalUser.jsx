@@ -2,6 +2,7 @@ import React from 'react'
 import {setCurrentUser, toggleMenu} from '../../../redux/user/userSlice'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
+import './ModalUser.css'
 
 const ModalUser = () => {
     const {currentUser, hiddenMenu} = useSelector(state => state.user);

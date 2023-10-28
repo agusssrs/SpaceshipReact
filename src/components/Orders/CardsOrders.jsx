@@ -6,7 +6,7 @@ import './OrdersStyle.css'
 const CardsOrders = () => {
     const {orders, loading, error} = useSelector(state => state.orders);
     if (loading && !orders) {
-        return 'cargando...'
+        return <div className='loadingOrders'>Cargando...</div>
     }
 
     if (error) {

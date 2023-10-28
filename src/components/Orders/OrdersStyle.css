@@ -1,11 +1,21 @@
 .Orders{
     width: 100vw;
+    height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center;    
     flex-direction: column;
     padding: 40px;
     gap: 70px;
+}
+
+.loadingOrders{
+    height: 100vh;
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    text-align: center;
+    color: #ff914d;
+    text-shadow: 0px 0px 22px #ff914d; 
 }
 
 .ordersTitle{
@@ -16,6 +26,7 @@
 
 .orderWrapper{
     display: flex;
+    top: 62px;
     gap: 20px;
     flex-direction: column;
     align-items: center;
@@ -48,5 +59,119 @@
 }
 
 .fotos img{
-    width: 150px;
+    width: 153.8px;
+}
+
+/* Mediasqueries */
+
+@media (max-width:1030px) {
+    .cardsContainer{
+        width: 800px;
+    }
+
+    .fotos img{
+        width: 120.5px;
+    }
+}
+
+@media (max-width:830px) {
+    .cardsContainer{
+        width: 680px;
+    }
+
+    .fotos img{
+        width: 100.5px;
+    }
+}
+
+@media (max-width:720px) {
+    .cardsContainer{
+        width: 600px;
+    }
+
+    .fotos img{
+        width: 87px;
+    }
+}
+
+@media (max-width:650px) {
+    .cardsContainer{
+        width: 500px;
+    }
+
+    .fotos img{
+        width: 70.5px;
+    }
+}
+
+@media (max-width:540px) {
+    .cardsContainer{
+        width: 400px;
+    }
+
+    .imgContainer{
+        display: grid;
+        grid-template-columns: 120px 120px 120px;
+
+    }
+
+    .fotos img{
+        width: 112.5px;
+    }
+}
+
+@media (max-width:540px) {
+    .cardsContainer{
+        width: 360px;
+    }
+
+    .imgContainer{
+        display: grid;
+        grid-template-columns: 105px 105px 105px;
+
+    }
+
+    .fotos img{
+        width: 100.5px;
+    }
+}
+
+@media (max-width:390px) {
+    .cardsContainer{
+        width: 310px;
+    }
+
+    .imgContainer{
+        display: grid;
+        grid-template-columns: 90px 90px 90px;
+
+    }
+
+    .fotos img{
+        width: 83px;
+    }
+
+    .ordersTitle{
+        font-size: 40px;
+    }
+}
+
+@media (max-width:340px) {
+    .cardsContainer{
+        width: 285px;
+    }
+
+    .imgContainer{
+        display: grid;
+        grid-template-columns: 80px 80px 80px;
+
+    }
+
+    .fotos img{
+        width: 78px;
+    }
+
+    .ordersTitle{
+        font-size: 36px;
+    }
 }

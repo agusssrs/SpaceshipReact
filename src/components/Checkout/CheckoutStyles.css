@@ -111,11 +111,20 @@
 }   
 
 .Checkout{
-    display: flex;
+    /* display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
-    height: 100vh;
+    height: 100cap;
+    width: 100vw; */
     width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;    
+    flex-direction: column;
+    padding: 40px;
+    padding-top: 20px;
+    /* gap: 20px; */
 }
 
 /* Checkout From */
@@ -157,6 +166,14 @@
 .checkoutFormEmail{
     color: white;
     width: 300px;
+    background: #3F3C43;
+    border: transparent;
+    border-bottom: 3px solid #c56f3b;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    font-size: 20px;
+    background-color: transparent;
 }
 
 .checkoutFormCellphone{
@@ -169,18 +186,20 @@
     align-items: center;
     height: 25px;
     font-size: 20px;
+    background-color: transparent;
 }
 
 .checkoutFormAddress{
     color: white;
     width: 300px;
-    background: transparent;
+    background: #3F3C43;
     border: transparent;
     border-bottom: 3px solid #c56f3b;
     justify-content: center;
     align-items: center;
     height: 25px;
     font-size: 20px;
+    background-color: transparent;
 }
 
 .checkoutFormCardNumber{
@@ -209,4 +228,71 @@
     color: white;
     font-size: 20px;
     box-shadow: 0px 0px 10px #ff914d; 
+}
+
+
+/* Mediasqueries */
+
+@media (max-width: 1130px){
+    .checkoutProductsWrp{
+        width: 800px;
+    }
+}
+
+@media (max-width:1000px){
+    .ChekoutForm h2{
+        text-align: center;
+        width: 700px;       
+    }
+}
+
+@media (max-width: 830px){
+    .checkoutProductsWrp{
+        width: 700px;
+    }
+
+    .ChekoutForm{
+        width: 700px;
+    }
+
+    .checkoutForm{
+        width: 700px;
+    }
+
+    .checkoutFormGrid{
+        grid-template-columns: 300px 300px;
+    }
+
+    .checkoutFormEmail, .checkoutFormCellphone, .checkoutFormAddress, .checkoutFormCardNumber{
+        width: 250px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 720px){
+    .ChekoutForm h2{
+        text-align: center;
+        width: 550px;       
+    }
+
+    .checkoutProductsWrp{
+        width: 600px;
+    }
+
+    .ChekoutForm{
+        width: 600px;
+    }
+
+    .checkoutForm{
+        width: 600px;
+    }
+
+    .checkoutFormGrid{
+        grid-template-columns: 300px 300px;
+    }
+
+    .checkoutFormEmail, .checkoutFormCellphone, .checkoutFormAddress, .checkoutFormCardNumber{
+        width: 250px;
+        font-size: 15px;
+    }
 }
