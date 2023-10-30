@@ -1,13 +1,29 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { addToCart } from '../../redux/cart/cartSlice.js'
 import Swal from 'sweetalert2';
+import axios from 'axios';
 
 export const formatNumberWithDots = (number) => {
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
 }
 
-const Cars = (props) => {
+const Cars = () => {
+  const [products, setProducts] = useState([]);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const response = await axios.get('https://spaceship-api.vercel.app/products');
+        setProducts(response.data);
+        console.log(response.data);
+      } catch (error) {
+        setError(error);
+      }
+    }
+    fetchData();
+  }, []);
   
 
   const alert = () => {
@@ -26,27 +42,35 @@ const Cars = (props) => {
       title: '¡Tu coche se agregó al carrito de reservas!'
     })
   }
-  const handleReservation = (coches) => {
-    dispatch(addToCart({ ...coches }))
+  const handleReservation = (products) => {
+    dispatch(addToCart({ ...products }))
     alert()
   }
   const dispatch = useDispatch();
-  return (
-    
-      props.list.map((coches) => {
-        return(
-          <div key={coches.id} className='carCard'>
-          <img src={coches.carImg} alt="" />
-          <h2>{coches.brand + ' ' + coches.model}</h2>
-          <p className='carKm'>{coches.km}</p>
-          <p className='carPice'>{`U$D ${formatNumberWithDots(coches.price)}`}</p>
-          <button className='rsvBtn' id={coches.id} onClick={() => handleReservation(coches)}>Reservar</button>
-        </div>
-        )
-    })
+
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  } else {
+    return (
+
+        products.map(product => (
+          <div key={product.id} className='carCard'>
+            <img src={product.carImg} alt="" />
+            <h2>{product.brand + ' ' + product.model}</h2>
+            <p className='carKm'>{product.km}</p>
+            <p className='carPice'>{`U$D ${formatNumberWithDots(product.price)}`}</p>
+            <button className='rsvBtn' id={product.id} onClick={() => handleReservation(product)}>Reservar</button>
+          </div>
+        ))
+        
+
+
+    )}
 
     
-  )
+  
 }
+  
+
 
 export default Cars

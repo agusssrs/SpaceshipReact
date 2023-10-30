@@ -156,13 +156,13 @@ const Login = () => {
                 <Form>
                     <div class="email">
                         <label htmlFor="email">Tu email:</label>
-                        <Field type="email" name="email" id="email" className="emailFieldLogin"/>
+                        <Field type="email" name="email" id="email"/>
                         {errors.email && touched.email ? (<div className='errors'>{errors.email}</div>) : null}  
                     </div>
 
                     <div className="password">
                         <label htmlFor="password">Tu password: </label>
-                        <Field type="password" name="password" id="password" className="passwordFieldLogin"/>
+                        <Field type="password" name="password" id="password"/>
                         {errors.password && touched.password ? (<div className='errors'>{errors.password}</div>) : null}
                     </div>
 

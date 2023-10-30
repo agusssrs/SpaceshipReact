@@ -12,16 +12,19 @@ const Checkout = () => {
     }, 0)
 
   return (
-    <div className='Checkout'>
-        <CheckoutForm
-            cartItems={cartItems}
-            price={price}
-        />
-        <CheckoutProducts
-            cartItems={cartItems}
-            price={price}
-        />
+    <div className="ordersMain">
+        <div className='Checkout'>
+            <CheckoutForm
+                cartItems={cartItems}
+                price={price}
+            />
+            <CheckoutProducts
+                cartItems={cartItems}
+                price={price}
+            />
+        </div>
     </div>
+
   )
 }
 
