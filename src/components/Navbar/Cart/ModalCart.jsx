@@ -24,22 +24,7 @@ const ModalCart = () => {
         ))
 
     }, [cartItems]);
-    // const alert = () => {
-    //     const Toast = Swal.mixin({
-    //         toast: true,
-    //         position: 'top-end',
-    //         showConfirmButton: false,
-    //         timer: 2000,
-    //         timerProgressBar: true,
-    //         background: '#3a3e4b',
-    //         color:'#ff914d'
-    //     })
-    //     Toast.fire({
-    //         icon: 'success',
-    //         iconColor: '#ff914d',
-    //         title: '¡Tu reserva fue realizada con exito!'
-    //     })
-    // }
+
 
     const alertDlt = () => {
         const Toast = Swal.mixin({

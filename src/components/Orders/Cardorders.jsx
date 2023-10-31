@@ -1,7 +1,4 @@
 import React from 'react'
-import { formatNumberWithDots } from '../Cars/Cars';
-import { useNavigate } from 'react-router-dom';
-import { useSelector } from 'react-redux';
 import './OrdersStyle.css'
 
 
@@ -22,7 +19,6 @@ const Cardorders = ({createdAt, total, _id, items}) => {
       <div className='cardsContainer'>
           <h2>ID de orden: {_id.slice(0,5)}</h2>
           <p>Fecha {formatDate(createdAt)}</p>
-          {/* <p>{formatNumberWithDots(total)}</p> */}
           <div className='imgContainer'>
             {
               items.slice(0,6).map(

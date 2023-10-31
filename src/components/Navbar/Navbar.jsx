@@ -24,10 +24,6 @@ const Navbar = () => {
     <header>
         <img src= {logosasml} alt="logo" className='logo' />
         <nav className='navbar'>
-            {/* <label htmlFor="menuToggle" className='menuLabel'>
-                <div className='menuIcon'><img src={menuhamburguesa} alt=""/></div>
-            </label>
-            <input type="checkbox" id='menuToggle' /> */}
             <ModalUser/>
 
             <label htmlFor="menuToggle" className='menuLabel'>
