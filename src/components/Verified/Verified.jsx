@@ -26,6 +26,15 @@ const Verified = () => {
         } catch (error) {
           handleBotonActivo(true);
           console.log(error);
+          if(error.response.status === 404) {
+            alert('El usuario no se encuntra en la base de datos. Por favor, intentelo nuevamente.')
+          }
+          if(error.response.status === 400) {
+            alert('El usuario ya fue verificado.')
+          }
+          if(error.response.status === 401) {
+            alert('El codigo ingresado no es válido. Por favor, intentelo nuevamente.')
+          }
         }    
     } 
 

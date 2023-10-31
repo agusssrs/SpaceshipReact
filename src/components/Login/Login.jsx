@@ -128,6 +128,12 @@ const Login = () => {
         } catch (error) {
             handleBotonActivo(true);
             console.log(error);
+            if(error.response.status === 404) {
+                alert('El email no se encuntra en la base de datos. Por favor, intentelo nuevamente.')
+            }
+            if(error.response.status === 401) {
+                alert('La contraseña es incorrecta. Por favor, intentelo nuevamente.')
+            }
         }
     }
     
