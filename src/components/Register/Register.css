@@ -5,7 +5,7 @@
     gap: 60px;
     flex-wrap: wrap;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(to bottom,#3a3e4b ,#252c3a);
 }
 
