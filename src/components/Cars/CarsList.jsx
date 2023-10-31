@@ -1,17 +1,31 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Cars.css'
-import allCars from '../../data/data.js';
 import Cars from './Cars'
+import axios from 'axios'
 
 const CarsList = () => {
-  const [sortedList, setSortedList] = useState([...allCars]);
+  const [sortedList, setSortedList] = useState([])
+
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const response = await axios.get('https://spaceship-api.vercel.app/products', {});
+        setSortedList(response.data);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+    fetchData();
+  }, []);
+
+
+  
 
   const handleSort = (keyName, order) => {
-    const sorted = [...allCars].sort((a, b) => {
+    const sorted = [...sortedList].sort((a, b) => {
       if (order === 'asc') {
         return a[keyName] < b[keyName] ? -1 : 1;
-      }
-      if (order === 'desc') {
+      } else {        
         return a[keyName] > b[keyName] ? -1 : 1;
       }
     });

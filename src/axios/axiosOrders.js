@@ -12,7 +12,6 @@ export const getOrders = async (dispatch, currentUser) => {
                 "x-token": currentUser.token,
             },
         });
-        console.log(orders);
 
         if (orders) {
             dispatch(fetchOrdersSuccess(orders.data.data))
