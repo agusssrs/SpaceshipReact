@@ -93,8 +93,8 @@ const Login = () => {
     }
     
     const validationSchema = Yup.object({
-        email: Yup.string().email('Ingrese un email válido.').required('Required'),
-        password: Yup.string().min(8, 'la contraseña debe tener minimo 8 caracteres.').required('Required'),
+        email: Yup.string().email('Ingrese un email válido.').required('El email es obligatorio'),
+        password: Yup.string().min(8, 'la contraseña debe tener minimo 8 caracteres.').required('La contraseña es obligatoria'),
     });   
 
     // const onSubmit = async (email, password, token) => {
@@ -156,13 +156,13 @@ const Login = () => {
                 <Form>
                     <div class="email">
                         <label htmlFor="email">Tu email:</label>
-                        <Field type="email" name="email" id="email"/>
+                        <Field type="email" name="email" id="email" className='emailFieldLogin'/>
                         {errors.email && touched.email ? (<div className='errors'>{errors.email}</div>) : null}  
                     </div>
 
                     <div className="password">
                         <label htmlFor="password">Tu password: </label>
-                        <Field type="password" name="password" id="password"/>
+                        <Field type="password" name="password" id="password" className='passwordFieldLogin'/>
                         {errors.password && touched.password ? (<div className='errors'>{errors.password}</div>) : null}
                     </div>
 
@@ -170,7 +170,7 @@ const Login = () => {
                     {botonActivo ? <button type="submit" className="signIn">Inicia sesion</button> : null}
 
                     <div class="registrarse">
-                        Si no tenés cuenta, registrate <Link to='/Register'>clickeando acá</Link>
+                        Si no tenés cuenta, registrate <Link to='/Register' className='registerLink'>clickeando acá</Link>
                     </div>
                 </Form>
             )}

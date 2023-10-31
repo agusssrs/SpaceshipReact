@@ -57,6 +57,13 @@
     color: white;
     width: 300px;
     text-align: center;
+    background: transparent;
+    border: transparent;
+    border-bottom: 3px solid #c56f3b;
+    height: 25px;
+    font-size: 22px;
+    text-align: center;
+    color: white;
 }
 
 .verifyCodeField{
@@ -96,4 +103,94 @@
     box-shadow: 0px 0px 20px #ff914d;
     border-radius: 0.5rem;
     cursor: pointer;
+}
+
+@media(max-width:696px){
+    .formVerified{
+        width: 430px;
+    }
+
+    .formVerified label{
+        font-size: 24px;
+    }
+
+    .emailVerified, .codeVerified{
+        font-size: 18px;
+    }
+
+    .logoVerified{
+        font-size: 40px;
+    }
+}
+
+@media(max-width:530px){
+    .formVerified{
+        width: 380px;
+    }
+
+    .logoVerified{
+        font-size: 35px;
+    }
+}
+
+@media(max-width:480px){
+    .logoVerified{
+        font-size: 30px;
+    }
+
+    #verified{
+        height: 95vh;
+    }
+}
+
+@media(max-width:410px){
+    .logoVerified{
+        font-size: 24px;
+    }
+
+    .formVerified{
+        width: 310px;
+    }
+
+    .formVerified label{
+        font-size: 19px;
+    }
+
+    .emailVerified, .codeVerified{
+        font-size: 16px;
+    }
+
+    .emailVerified{
+        width: 250px;
+    }
+
+    #verified{
+        height: 96vh;
+    }
+}
+
+@media(max-width:370px){
+    .logoVerified{
+        font-size: 23px;
+    }
+
+    .formVerified{
+        width: 290px;
+    }
+
+    .formVerified label{
+        font-size: 17.6px;
+    }
+
+    .emailVerified, .codeVerified{
+        font-size: 15px;
+    }
+
+    .emailVerified{
+        width: 230px;
+    }
+
+    #verified{
+        height: 96vh;
+    }
 }

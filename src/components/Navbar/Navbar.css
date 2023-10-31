@@ -403,3 +403,9 @@ header{
         width: 20px;
     }
 }
+
+@media (max-width:330px){
+    .userMenuMq2{
+        font-size: 14px;
+    }
+}

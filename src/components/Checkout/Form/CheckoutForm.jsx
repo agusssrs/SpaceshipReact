@@ -6,6 +6,7 @@ import * as Yup from 'yup';
 import { createOrder } from '../../../axios/axiosOrders';
 import { clearCart } from '../../../redux/cart/cartSlice'
 import '../CheckoutStyles.css'
+import { useNavigate } from 'react-router-dom';
 
 const checkOutInitialValues = {
     email: '',
@@ -24,7 +25,7 @@ const checkOutSchema = Yup.object({
 const CheckoutForm = ({cartItems, price, prePurchase}) => {
     const dispatch = useDispatch();
 
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
     const {currentUser} = useSelector(state => state.user);
 
@@ -46,8 +47,9 @@ const CheckoutForm = ({cartItems, price, prePurchase}) => {
 
                 try {
                     await createOrder(orderData, dispatch, currentUser);
-                    // navigate('/gracias')
+                    navigate('/thanks')
                     dispatch(clearCart())
+
                 } catch (error) {
                     console.log(error);
                     alert('Ocurrió un error al crear su reserva')

@@ -230,7 +230,8 @@
     border-radius: 0.5rem;
     color: white;
     font-size: 20px;
-    box-shadow: 0px 0px 10px #ff914d; 
+    box-shadow: 0px 0px 10px #ff914d;
+    cursor: pointer; 
 }
 
 
@@ -347,4 +348,147 @@
         width: 200px;
         font-size: 13px;
     }
+}
+
+@media (max-width:540px){
+    .checkoutFormGrid{
+        grid-template-columns: 200px 200px;
+    }
+
+    .checkoutFormEmail, .checkoutFormCellphone, .checkoutFormAddress, .checkoutFormCardNumber{
+        width: 180px;
+    }
+
+    .checkoutProductsWrp{
+        width: 400px;
+    }
+
+    .CardCheckoutProducts{
+        width: 150px;
+        text-align: start;
+    }
+
+    .trashBtnCheckout{
+        width: 120px;
+        height: 30px;
+    }
+
+    .delete{
+        font-size: 15px;
+        text-align: center;
+        padding-top: 3px;
+    }
+
+    .cardInfo h2{
+        font-size: 19px;
+    }
+
+    .cardInfo p{
+        font-size: 14px;
+    }
+
+    .ChekoutForm, .checkoutForm{
+        width: 400px;
+    }
+
+    .ChekoutForm h2{
+        font-size: 21px;
+        width: 400px;
+    }
+
+    .CheckoutProducts h2{
+        font-size: 21px;
+    }
+}
+
+@media (max-width:418px){
+    .checkoutFormGrid{
+        grid-template-columns: 160px 160px;
+    }
+
+    .checkoutFormEmail, .checkoutFormCellphone, .checkoutFormAddress, .checkoutFormCardNumber{
+        width: 145px;
+        font-size: 12px;
+    }
+
+    .checkoutEmail p, .checkoutCellphone p, .checkoutAddress p, .checkoutCardNumber p{
+        font-size: 14px;
+    }
+
+    .checkoutFormBtn{
+        width: 120px;
+        font-size: 17px;
+    }
+
+    .checkoutProductsWrp{
+        width: 320px;
+        gap: 14px;
+    }
+
+    .totalCheckOut p{
+        font-size: 20px;
+    }
+
+    .totalCheckOut{
+        width: 220px;
+    }
+
+    .ChekoutForm, .checkoutForm{
+        width: 320px;
+    }
+
+    .ChekoutForm h2{
+        font-size: 16px;
+        width: 320px;
+    }
+
+    .CheckoutProducts h2{
+        font-size: 21px;
+    }
+}
+
+@media (max-width:330px) {
+    .checkoutFormGrid{
+        grid-template-columns: 145px 145px;
+    }
+
+    .checkoutFormEmail, .checkoutFormCellphone, .checkoutFormAddress, .checkoutFormCardNumber{
+        width: 133px;
+        font-size: 12px;
+    }
+
+    .checkoutEmail p, .checkoutCellphone p, .checkoutAddress p, .checkoutCardNumber p{
+        font-size: 14px;
+    }
+
+    .checkoutFormBtn{
+        width: 120px;
+        font-size: 17px;
+    }
+
+    .checkoutProductsWrp{
+        width: 300px;
+        gap: 14px;
+    }
+
+    .totalCheckOut p{
+        font-size: 20px;
+    }
+
+    .totalCheckOut{
+        width: 220px;
+    }
+
+    .ChekoutForm, .checkoutForm{
+        width: 320px;
+    }
+
+    .ChekoutForm h2{
+        font-size: 16px;
+        width: 320px;
+    }
+
+    .CheckoutProducts h2{
+        font-size: 21px;
+    } 
 }

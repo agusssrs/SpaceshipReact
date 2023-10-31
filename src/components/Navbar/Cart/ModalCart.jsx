@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { clearCart } from '../../../redux/cart/cartSlice';
-import {addToReserve} from '../../../redux/cart/reserveSlice'
 import { useNavigate } from 'react-router-dom';
 import ModalCartCard from './ModalCartCard';
 import Swal from 'sweetalert2';

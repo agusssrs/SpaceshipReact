@@ -1,0 +1,117 @@
+#Thanks{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-direction: column;
+    height: 94vh;
+}
+
+.thanksTitle{
+    font-size: 55px;
+    padding: 40px;
+    color: #ff914d;
+    text-shadow: 0px 0px 35px #ff914d; 
+    padding-top: 100px;
+}
+
+.thanksTextContainer p{
+    font-size: 25px;
+    font-weight: 600;
+    color: #ff914d;
+}
+
+.thanksContainer{
+    display: flex;
+    gap: 100px;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.thanksBtn{
+    display: flex;
+    width: 180px;
+    height: 30px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #16222A;
+    border: 3px solid #c56f3b;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 20px;
+    box-shadow: 0px 0px 10px #ff914d;
+    cursor: pointer;
+}
+
+@media (max-width:830px){
+    .thanksTitle{
+        font-size: 40px;       
+    }
+}
+
+@media (max-width:600px){
+    .thanksTitle{
+        font-size: 30px;       
+    }
+
+    .thanksTextContainer p{
+        font-size: 20px;
+    }  
+    
+    .thanksBtn{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:470px){
+    .thanksTitle{
+        font-size: 25px;       
+    }
+
+    .thanksTextContainer p{
+        font-size: 17px;
+    }     
+}
+
+@media (max-width:450px){
+    #Thanks{
+        height: 95vh;
+    }
+}
+
+@media (max-width:403px){
+    .thanksTitle{
+        font-size: 20px;       
+    }
+
+    .thanksTextContainer p{
+        font-size: 15px;
+    }  
+    
+    .thanksBtn{
+        font-size: 14px;
+    }
+}
+
+@media (max-width:360px){
+    #Thanks{
+        height: 97vh;
+    }
+}
+
+@media (max-width:340px){
+    .thanksTitle{
+        font-size: 18px;       
+    }
+
+    .thanksTextContainer p{
+        font-size: 14.5px;
+    }  
+    
+    .thanksBtn{
+        font-size: 16px;
+    }
+}
