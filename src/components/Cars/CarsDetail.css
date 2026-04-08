@@ -1,0 +1,45 @@
+#CarsDetail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.carImage{
+    width: 600px;
+    height: 600px;
+}
+
+.car{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 20px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+}
+
+.carInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.carTitle{
+    padding: 5px;
+    color: #ff914d;
+    text-shadow: 0px 0px 17px #c56f3b;
+}
+
+.carInfo p:first-child {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.carInfo p:last-child {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff914d;
+}

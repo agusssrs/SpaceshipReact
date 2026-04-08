@@ -2,14 +2,16 @@ import React from 'react'
 import { useDispatch } from 'react-redux'
 import { addToCart } from '../../redux/cart/cartSlice.js'
 import Swal from 'sweetalert2';
+import { useNavigate } from 'react-router-dom';
 
 export const formatNumberWithDots = (number) => {
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
 }
 
-const Cars = (props) => {
-  
 
+
+const Cars = (props) => {
+  const navigate = useNavigate();
   const alert = () => {
     const Toast = Swal.mixin({
       toast: true,
@@ -35,12 +37,12 @@ const Cars = (props) => {
     
       props.list.map((coches) => {
         return(
-          <div key={coches.id} className='carCard'>
+          <div key={coches.id} className='carCard' onClick={() => navigate (`/car/${coches.id}`)}>
           <img src={coches.carImg} alt="" />
           <h2>{coches.brand + ' ' + coches.model}</h2>
           <p className='carKm'>{coches.km}</p>
           <p className='carPice'>{`U$D ${formatNumberWithDots(coches.price)}`}</p>
-          <button className='rsvBtn' id={coches.id} onClick={() => handleReservation(coches)}>Reservar</button>
+          <button className='rsvBtn' id={coches.id} onClick={(e) =>  handleReservation(coches)}>Reservar</button>
         </div>
         )
     })

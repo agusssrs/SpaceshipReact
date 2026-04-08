@@ -8,7 +8,7 @@ import Verified from './components/Verified/Verified'
 import Orders from './components/Orders/Orders';
 import Checkout from './components/Checkout/Checkout';
 import Thanks from './components/Thanks/Thanks';
-
+import CarDetail from './components/Cars/CarsDetail';
 
 
 function App() {
@@ -23,6 +23,7 @@ function App() {
         <Route path='/orders' element={<Orders/>}/>
         <Route path='/checkout' element={<Checkout/>}/>
         <Route path='/thanks' element={<Thanks/>}/>
+        <Route path='/car/:id' element={<CarDetail />} />
       </Routes>
     </div>
   );
